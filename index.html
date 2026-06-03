@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+
+<html lang="pl"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Beata Stróżna - Gabinet Masażu Leczniczego</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary-container": "#4db2b2",
+                    "on-primary-fixed": "#002020",
+                    "inverse-on-surface": "#f2f0f0",
+                    "surface-container": "#efeded",
+                    "on-secondary-fixed-variant": "#00429b",
+                    "on-background": "#1b1c1c",
+                    "tertiary-fixed": "#ffdbcc",
+                    "on-tertiary": "#ffffff",
+                    "error": "#ba1a1a",
+                    "primary-fixed-dim": "#74d6d6",
+                    "outline": "#6e7979",
+                    "background": "#fbf9f8",
+                    "surface-container-low": "#f5f3f3",
+                    "on-primary-fixed-variant": "#004f50",
+                    "on-secondary-fixed": "#001945",
+                    "error-container": "#ffdad6",
+                    "on-surface-variant": "#3e4949",
+                    "surface-container-high": "#eae8e7",
+                    "on-tertiary-fixed-variant": "#733512",
+                    "secondary-fixed": "#d9e2ff",
+                    "on-error": "#ffffff",
+                    "outline-variant": "#bdc9c8",
+                    "primary": "#006a6a",
+                    "surface-container-highest": "#e4e2e2",
+                    "surface-dim": "#dbdad9",
+                    "surface-container-lowest": "#ffffff",
+                    "on-error-container": "#93000a",
+                    "deep-slate": "#333333",
+                    "surface-bright": "#fbf9f8",
+                    "secondary-fixed-dim": "#b0c6ff",
+                    "secondary": "#225abc",
+                    "surface-mist": "#EBF9F9",
+                    "on-surface": "#1b1c1c",
+                    "tertiary": "#914c27",
+                    "on-tertiary-fixed": "#351000",
+                    "surface-variant": "#e4e2e2",
+                    "on-secondary-container": "#002f74",
+                    "on-primary": "#ffffff",
+                    "surface-tint": "#006a6a",
+                    "tertiary-fixed-dim": "#ffb693",
+                    "surface": "#fbf9f8",
+                    "inverse-surface": "#303030",
+                    "primary-fixed": "#91f3f2",
+                    "on-tertiary-container": "#622805",
+                    "inverse-primary": "#74d6d6",
+                    "secondary-container": "#6a98fe",
+                    "on-primary-container": "#004141",
+                    "on-secondary": "#ffffff",
+                    "clinical-white": "#FFFFFF",
+                    "tertiary-container": "#e38e64"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "container-max": "1200px",
+                    "stack-lg": "48px",
+                    "gutter": "24px",
+                    "margin-desktop": "64px",
+                    "base": "8px",
+                    "stack-md": "24px",
+                    "margin-mobile": "20px",
+                    "stack-sm": "12px"
+            },
+            "fontFamily": {
+                    "display-lg": ["Manrope"],
+                    "label-md": ["Plus Jakarta Sans"],
+                    "headline-lg-mobile": ["Manrope"],
+                    "body-lg": ["Plus Jakarta Sans"],
+                    "headline-md": ["Manrope"],
+                    "caption": ["Plus Jakarta Sans"],
+                    "headline-lg": ["Manrope"],
+                    "body-md": ["Plus Jakarta Sans"]
+            },
+            "fontSize": {
+                    "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600"}],
+                    "headline-lg-mobile": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "500"}],
+                    "caption": ["12px", {"lineHeight": "16px", "fontWeight": "400"}],
+                    "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            background-color: #fbf9f8;
+            color: #1b1c1c;
+            scroll-behavior: smooth;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="font-body-md text-body-md">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-clinical-white/90 backdrop-blur-md shadow-sm">
+<nav class="flex justify-between items-center h-20 px-4 md:px-margin-desktop max-w-container-max mx-auto">
+<div class="flex items-center gap-3">
+<a class="font-headline-md text-headline-md font-bold text-primary leading-tight">
+                    Beata Stróżna
+                </a>
+</div>
+<ul class="hidden md:flex gap-8 items-center">
+<li><a class="text-primary font-semibold border-b-2 border-primary transition-colors font-label-md text-label-md" href="index.html">Strona główna</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="o-mnie.html">O mnie</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="oferta.html">Oferta</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="galeria.html">Galeria</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="kontakt.html">Kontakt</a></li>
+</ul>
+<a class="bg-primary text-on-primary px-6 py-2.5 rounded-full font-label-md text-label-md hover:opacity-90 transition-all shadow-md inline-flex items-center justify-center" href="tel:+48782638597">
+                Umów wizytę
+            </a>
+</nav>
+</header>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative min-h-[80vh] flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Relaksujący masaż leczniczy" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBl0-ukYnDnn9nrufFfcMolgI7n5jU4Ih_sUfOjCnCxuhat_ITdyE0rHuw283igjH9rFxNeGRvdKNasswDhPzjNGKN03OlP5JspJrFWbxO4PEPwICtnNYzX1Aq4MqeRolX6Zma_VDPD4Cdbo-So7MAz7zI9x7pvgYmCJyRqRgpBTOYqQRKu7nWtQ1c2MUreEy6AnSWvDf0bfbq_67UiR4hx1Pzu7DkAL4nfD4SV-oBWqP8xuOIi8Yrg7bfhU-vbZ69EZeLVRCcuNuT"/>
+<div class="absolute inset-0 bg-gradient-to-r from-background/90 via-background/40 to-transparent"></div>
+</div>
+<div class="container max-w-container-max mx-auto px-4 md:px-margin-desktop relative z-10">
+<div class="max-w-2xl">
+<span class="inline-block py-1 px-4 rounded-full bg-surface-mist text-primary font-label-md text-label-md mb-stack-sm border border-primary/10">
+                        Gabinet Masażu Leczniczego
+                    </span>
+<h1 class="font-display-lg text-display-lg text-on-background mb-stack-md leading-tight">
+                        Profesjonalny Masaż Leczniczy w Jelczu-Laskowicach
+                    </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-stack-lg max-w-lg">
+                        Przywróć swojemu ciału sprawność i zapomnij o bólu. Skorzystaj z wieloletniego doświadczenia i indywidualnie dobranych terapii.
+                    </p>
+<div class="flex flex-wrap gap-stack-sm">
+<a class="bg-primary text-on-primary px-8 py-4 rounded-lg font-label-md text-label-md hover:translate-y-[-2px] transition-all shadow-lg inline-flex items-center justify-center" href="oferta.html">Oferta</a>
+<a class="border-2 border-primary text-primary px-8 py-4 rounded-lg font-label-md text-label-md hover:bg-surface-mist transition-all inline-flex items-center justify-center" href="o-mnie.html">
+                            Dowiedz się więcej
+                        </a>
+</div>
+</div>
+</div>
+</section>
+<!-- Why Us Section -->
+<section class="py-stack-lg bg-background">
+<div class="container max-w-container-max mx-auto px-4 md:px-margin-desktop">
+<div class="text-center mb-stack-lg">
+<h2 class="font-headline-lg text-headline-lg text-on-background mb-4">Dlaczego ja?</h2>
+<div class="h-1 w-20 bg-primary mx-auto rounded-full"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-stack-md">
+<!-- Feature 1 -->
+<div class="md:col-span-8 bg-clinical-white p-10 rounded-lg shadow-[0px_4px_20px_rgba(0,0,0,0.04)] flex flex-col justify-between hover:shadow-md transition-all group border border-surface-container">
+<div>
+<span class="material-symbols-outlined text-primary text-4xl mb-4 bg-surface-mist p-4 rounded-full">history</span>
+<h3 class="font-headline-md text-headline-md mb-2">Prawie 30 lat doświadczenia</h3>
+<p class="text-on-surface-variant">Tysiące zadowolonych pacjentów i dekady praktyki klinicznej pozwalają nmi precyzyjnie diagnozować źródła bólu i skutecznie je eliminować.</p>
+</div>
+<a class="mt-8 flex items-center text-primary font-semibold gap-2" href="o-mnie.html">
+                            Poznaj naszą historię <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+<!-- Feature 2 -->
+<div class="md:col-span-4 bg-primary text-on-primary p-10 rounded-lg shadow-lg flex flex-col items-center text-center justify-center">
+<span class="material-symbols-outlined text-5xl mb-4">medical_services</span>
+<h3 class="font-headline-md text-headline-md mb-2">Indywidualne podejście</h3>
+<p class="opacity-90">Każda terapia jest projektowana pod konkretne potrzeby pacjenta.</p>
+</div>
+<!-- Feature 3 -->
+<div class="md:col-span-4 bg-surface-mist p-10 rounded-lg border border-primary/10">
+<span class="material-symbols-outlined text-primary text-3xl mb-4">precision_manufacturing</span>
+<h4 class="font-bold text-xl mb-2">Nowoczesny sprzęt</h4>
+<p class="text-on-surface-variant text-sm">Wykorzystuję certyfikowane urządzenia wspierające proces drenażu i rehabilitacji, takie jak BOA MAX 2.</p>
+</div>
+<!-- Feature 4 -->
+<div class="md:col-span-8 bg-clinical-white p-10 rounded-lg shadow-[0px_4px_20px_rgba(0,0,0,0.04)] flex items-center gap-6 border border-surface-container">
+<div class="hidden sm:block">
+<div class="w-24 h-24 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container">
+<span class="material-symbols-outlined text-4xl">verified_user</span>
+</div>
+</div>
+<div>
+<h4 class="font-bold text-xl mb-1">Gwarancja jakości</h4>
+<p class="text-on-surface-variant">Moje usługi są oparte na rzetelnej wiedzy medycznej i ciągłym doskonaleniu umiejętności.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Short Offer Section -->
+<section class="py-stack-lg bg-surface-container-low" id="oferta">
+<div class="container max-w-container-max mx-auto px-4 md:px-margin-desktop">
+<div class="flex justify-between items-end mb-stack-lg flex-wrap gap-4">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-on-background mb-2">Skrócona oferta</h2>
+<p class="text-on-surface-variant">Najczęściej wybierane zabiegi terapeutyczne.</p>
+</div>
+<a class="mt-8 flex items-center text-primary font-semibold gap-2" href="oferta.html">Zobacz pełny cennik<span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-stack-md">
+<!-- Service 1 -->
+<div class="bg-clinical-white rounded-lg overflow-hidden shadow-[0px_4px_20px_rgba(0,0,0,0.04)] hover:translate-y-[-4px] transition-all flex flex-col border border-surface-container">
+<div class="h-48">
+<img alt="Masaż Leczniczy" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBl0-ukYnDnn9nrufFfcMolgI7n5jU4Ih_sUfOjCnCxuhat_ITdyE0rHuw283igjH9rFxNeGRvdKNasswDhPzjNGKN03OlP5JspJrFWbxO4PEPwICtnNYzX1Aq4MqeRolX6Zma_VDPD4Cdbo-So7MAz7zI9x7pvgYmCJyRqRgpBTOYqQRKu7nWtQ1c2MUreEy6AnSWvDf0bfbq_67UiR4hx1Pzu7DkAL4nfD4SV-oBWqP8xuOIi8Yrg7bfhU-vbZ69EZeLVRCcuNuT"/>
+</div>
+<div class="p-stack-md flex-grow flex flex-col">
+<h3 class="font-headline-md text-headline-md mb-2">Masaż Leczniczy</h3>
+<p class="text-on-surface-variant mb-6 text-sm flex-grow">Skupiony na schorzeniach ortopedycznych i neurologicznych, eliminacji konkretnych bólów.</p>
+<div class="flex items-center gap-2 mb-6">
+<span class="px-3 py-1 bg-surface-container rounded-full text-caption">Terapeutyczny</span>
+<span class="px-3 py-1 bg-surface-container rounded-full text-caption">Wysoka skuteczność</span>
+</div>
+<a class="w-full py-3 border border-primary text-primary rounded-lg font-semibold hover:bg-primary hover:text-white transition-all inline-flex items-center justify-center" href="kontakt.html">Umów termin</a>
+</div>
+</div>
+<!-- Service 2 -->
+<div class="bg-clinical-white rounded-lg overflow-hidden shadow-[0px_4px_20px_rgba(0,0,0,0.04)] hover:translate-y-[-4px] transition-all flex flex-col border border-surface-container">
+<div class="h-48">
+<img alt="Masaż Klasyczny" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuABtoLb0yMMrqO2BK15lsUb7IYh4nxqE190FRRGfQ3TSqqA3pxND0QzWg_PfeGhHIFuuyv76JTlxOlBScTBu7T1O92Ios8x0kSo9gh2lfPT-5eX-z_xq7uf6CIOxtHOhTufU1d68C0AEE4tVLG2tNl0JXRYR7Df11GU6ZoCIj2fljX8bz-zz1--QYlXatM_5h5e43IVSAeqWBvv-LScR11Ay9K5PMWJi3cWh-WeQbrgdAYGubMTqkn-K7qY4Q6sbIqje5hi8TiRGpOs"/>
+</div>
+<div class="p-stack-md flex-grow flex flex-col">
+<h3 class="font-headline-md text-headline-md mb-2">Masaż Klasyczny</h3>
+<p class="text-on-surface-variant mb-6 text-sm flex-grow">Stosowany w celach profilaktycznych jak i w leczeniu wielu schorzeń ciała.</p>
+<div class="flex items-center gap-2 mb-6">
+<span class="px-3 py-1 bg-surface-container rounded-full text-caption">Klasyczny</span>
+<span class="px-3 py-1 bg-surface-container rounded-full text-caption">Profilaktyka</span>
+</div>
+<a class="w-full py-3 border border-primary text-primary rounded-lg font-semibold hover:bg-primary hover:text-white transition-all inline-flex items-center justify-center" href="kontakt.html">Umów termin</a>
+</div>
+</div>
+<!-- Service 3 -->
+<div class="bg-clinical-white rounded-lg overflow-hidden shadow-[0px_4px_20px_rgba(0,0,0,0.04)] hover:translate-y-[-4px] transition-all flex flex-col border border-surface-container">
+<div class="h-48">
+<img alt="Drenaż Limfatyczny" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBl0-ukYnDnn9nrufFfcMolgI7n5jU4Ih_sUfOjCnCxuhat_ITdyE0rHuw283igjH9rFxNeGRvdKNasswDhPzjNGKN03OlP5JspJrFWbxO4PEPwICtnNYzX1Aq4MqeRolX6Zma_VDPD4Cdbo-So7MAz7zI9x7pvgYmCJyRqRgpBTOYqQRKu7nWtQ1c2MUreEy6AnSWvDf0bfbq_67UiR4hx1Pzu7DkAL4nfD4SV-oBWqP8xuOIi8Yrg7bfhU-vbZ69EZeLVRCcuNuT"/>
+</div>
+<div class="p-stack-md flex-grow flex flex-col">
+<h3 class="font-headline-md text-headline-md mb-2">Drenaż Limfatyczny</h3>
+<p class="text-on-surface-variant mb-6 text-sm flex-grow">Usprawnia funkcję układu limfatycznego, zapobiegając groźnym zastojom.</p>
+<div class="flex items-center gap-2 mb-6">
+<span class="px-3 py-1 bg-surface-container rounded-full text-caption">Detoks</span>
+<span class="px-3 py-1 bg-surface-container rounded-full text-caption">Delikatny</span>
+</div>
+<a class="w-full py-3 border border-primary text-primary rounded-lg font-semibold hover:bg-primary hover:text-white transition-all inline-flex items-center justify-center" href="kontakt.html">Umów termin</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- About Snippet -->
+<section class="py-stack-lg bg-background">
+<div class="container max-w-container-max mx-auto px-4 md:px-margin-desktop">
+<div class="flex flex-col md:flex-row items-center gap-16">
+<div class="md:w-1/2 relative">
+<div class="absolute -top-4 -left-4 w-full h-full bg-primary/10 rounded-lg"></div>
+<img alt="Gabinet masażu" class="rounded-lg shadow-xl relative z-10 w-full object-cover aspect-[4/5]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuABtoLb0yMMrqO2BK15lsUb7IYh4nxqE190FRRGfQ3TSqqA3pxND0QzWg_PfeGhHIFuuyv76JTlxOlBScTBu7T1O92Ios8x0kSo9gh2lfPT-5eX-z_xq7uf6CIOxtHOhTufU1d68C0AEE4tVLG2tNl0JXRYR7Df11GU6ZoCIj2fljX8bz-zz1--QYlXatM_5h5e43IVSAeqWBvv-LScR11Ay9K5PMWJi3cWh-WeQbrgdAYGubMTqkn-K7qY4Q6sbIqje5hi8TiRGpOs"/>
+</div>
+<div class="md:w-1/2">
+<h2 class="font-headline-lg text-headline-lg mb-stack-sm">Beata Stróżna</h2>
+<p class="font-headline-md text-headline-md text-primary mb-stack-md">Doświadczona terapeutka i masażystka z pasją do pomagania</p>
+<div class="space-y-4 text-on-surface-variant font-body-lg">
+<p>Absolwentka 4-letniego Technikum Masażu w Warszawie. Specjalistka w dziedzinie masażu leczniczego, klasycznego, segmentarnego, sportowego oraz drenażu limfatycznego.</p>
+<p>Może pochwalić się prawie trzydziestoletnim doświadczeniem zawodowym. Swoją przygodę z masażem rozpoczęła praktyką w Instytucie Reumatologii i Neurologii w Warszawie.</p>
+<ul class="pt-4 space-y-2">
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+<span>Certyfikowana specjalistka masażu leczniczego</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+<span>Prawie 30 lat doświadczenia w zawodzie</span>
+</li>
+</ul>
+<div class="pt-6">
+<a class="mt-8 flex items-center text-primary font-semibold gap-2" href="o-mnie.html">Czytaj więcej o moim doświadczeniu<span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Znajdź nasz gabinet (Map Section) -->
+<section class="py-stack-lg bg-surface-container-low" id="lokalizacja">
+<div class="container max-w-container-max mx-auto px-4 md:px-margin-desktop">
+<div class="text-center mb-stack-lg">
+<h2 class="font-headline-lg text-headline-lg text-on-background mb-4">Znajdź mój gabinet</h2>
+<div class="h-1 w-20 bg-primary mx-auto rounded-full"></div>
+</div>
+<div class="rounded-2xl overflow-hidden shadow-lg h-[450px] relative group border border-surface-container">
+<iframe allowfullscreen="" height="100%" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2499.736025265691!2d17.337115877134374!3d51.03709807170889!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47102071149d8039%3A0xd3841a6e7b7f9031!2sMakowa%2014%2C%2055-220%20Jelcz-Laskowice!5e0!3m2!1spl!2spl!4v1711234567890!5m2!1spl!2spl" style="border:0;" width="100%"></iframe>
+<div class="absolute bottom-6 left-6 right-6 lg:left-auto lg:w-80 bg-clinical-white/95 backdrop-blur-sm p-6 rounded-xl shadow-xl border border-primary/5">
+<h4 class="font-headline-md text-headline-md text-primary mb-2">Moja lokalizacja</h4>
+<p class="font-body-md text-on-surface mb-2">ul. Makowa nr 14</p>
+<p class="font-body-md text-on-surface mb-4 text-sm">Budynek z charakterystycznym banerem i dużymi iglakami przy wejściu. Wejście od ulicy Frezjowej.</p>
+<a class="flex items-center gap-2 text-primary font-label-md hover:underline" href="https://www.google.com/maps/search/?api=1&amp;query=Makowa+14,55-220+Jelcz-Laskowice" target="_blank">
+<span>Otwórz w Mapach Google</span>
+<span class="material-symbols-outlined text-sm">open_in_new</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container w-full py-stack-lg border-t border-outline-variant/30">
+<div class="flex flex-col md:flex-row justify-between items-center px-4 md:px-margin-desktop max-w-container-max mx-auto gap-stack-md">
+<div class="text-on-surface-variant font-body-md text-body-md text-center md:text-left">
+                © 2026 Gabinet Masażu Leczniczego Beata Stróżna
+            </div>
+<div class="flex items-center gap-1 text-on-surface-variant font-label-md text-label-md">
+				<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="polityka-prywatnosci.html">Polityka prywatności i cookies</a>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant font-label-md text-label-md">
+                Projekt i realizacja: 
+                <a class="text-primary hover:underline transition-colors flex items-center gap-1" href="https://halaczkiewicz.it" target="_blank">
+                    halaczkiewicz.it
+                </a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

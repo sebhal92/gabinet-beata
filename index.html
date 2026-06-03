@@ -120,7 +120,7 @@
 <header class="fixed top-0 w-full z-50 bg-clinical-white/90 backdrop-blur-md shadow-sm">
 <nav class="flex justify-between items-center h-20 px-4 md:px-margin-desktop max-w-container-max mx-auto">
 <div class="flex items-center gap-3">
-<a class="font-headline-md text-headline-md font-bold text-primary leading-tight">
+<a class="font-headline-md text-headline-md font-bold text-primary leading-tight" href="index.html">
                     Beata Stróżna
                 </a>
 </div>
@@ -131,10 +131,27 @@
 <li><a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="galeria.html">Galeria</a></li>
 <li><a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="kontakt.html">Kontakt</a></li>
 </ul>
+<div class="flex items-center gap-4">
 <a class="bg-primary text-on-primary px-6 py-2.5 rounded-full font-label-md text-label-md hover:opacity-90 transition-all shadow-md inline-flex items-center justify-center" href="tel:+48782638597">
                 Umów wizytę
             </a>
+<!-- PRZYCISK HAMBURGERA (widoczny tylko na mobilkach) -->
+<button id="menuBtn" class="block md:hidden text-primary p-2 focus:outline-none">
+<span class="material-symbols-outlined text-[32px] block" id="menuIcon">menu</span>
+</button>
+</div>
 </nav>
+
+<!-- PANEL MENU MOBILNEGO (ukryty za pomocą klasy hidden) -->
+<div id="mobileMenu" class="hidden fixed top-20 left-0 w-full bg-clinical-white shadow-lg border-t border-outline-variant/20 py-6 px-4 md:hidden z-40">
+<ul class="flex flex-col gap-5 text-center">
+<li><a class="block text-primary font-semibold py-2 font-label-md text-lg" href="index.html">Strona główna</a></li>
+<li><a class="block text-on-surface-variant hover:text-primary py-2 font-label-md text-lg" href="o-mnie.html">O mnie</a></li>
+<li><a class="block text-on-surface-variant hover:text-primary py-2 font-label-md text-lg" href="oferta.html">Oferta</a></li>
+<li><a class="block text-on-surface-variant hover:text-primary py-2 font-label-md text-lg" href="galeria.html">Galeria</a></li>
+<li><a class="block text-on-surface-variant hover:text-primary py-2 font-label-md text-lg" href="kontakt.html">Kontakt</a></li>
+</ul>
+</div>
 </header>
 <main class="pt-20">
 <!-- Hero Section -->
@@ -342,4 +359,19 @@
 </div>
 </div>
 </footer>
+<script>
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const menuIcon = document.getElementById('menuIcon');
+
+    menuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+        
+        if (mobileMenu.classList.contains('hidden')) {
+            menuIcon.textContent = 'menu';
+        } else {
+            menuIcon.textContent = 'close';
+        }
+    });
+</script>
 </body></html>

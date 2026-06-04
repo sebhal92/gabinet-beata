@@ -1,390 +1,240 @@
 <!DOCTYPE html>
-
-<html class="scroll-smooth" lang="pl"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Oferta - Beata Stróżna | Gabinet Masażu Leczniczego</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
+<html class="scroll-smooth" lang="pl">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Beata Stróżna - Gabinet Masażu Leczniczego</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
             theme: {
                 extend: {
-                    "colors": {
-                        "primary-container": "#4db2b2",
-                        "on-primary-fixed": "#002020",
-                        "inverse-on-surface": "#f2f0f0",
-                        "surface-container": "#efeded",
-                        "on-secondary-fixed-variant": "#00429b",
-                        "on-background": "#1b1c1c",
-                        "tertiary-fixed": "#ffdbcc",
-                        "on-tertiary": "#ffffff",
-                        "error": "#ba1a1a",
-                        "primary-fixed-dim": "#74d6d6",
-                        "outline": "#6e7979",
-                        "background": "#fbf9f8",
-                        "surface-container-low": "#f5f3f3",
-                        "on-primary-fixed-variant": "#004f50",
-                        "on-secondary-fixed": "#001945",
-                        "error-container": "#ffdad6",
-                        "on-surface-variant": "#3e4949",
-                        "surface-container-high": "#eae8e7",
-                        "on-tertiary-fixed-variant": "#733512",
-                        "secondary-fixed": "#d9e2ff",
-                        "on-error": "#ffffff",
-                        "outline-variant": "#bdc9c8",
-                        "primary": "#006a6a",
-                        "surface-container-highest": "#e4e2e2",
-                        "surface-dim": "#dbdad9",
-                        "surface-container-lowest": "#ffffff",
-                        "on-error-container": "#93000a",
-                        "deep-slate": "#333333",
-                        "surface-bright": "#fbf9f8",
-                        "secondary-fixed-dim": "#b0c6ff",
-                        "secondary": "#225abc",
-                        "surface-mist": "#EBF9F9",
-                        "on-surface": "#1b1c1c",
-                        "tertiary": "#914c27",
-                        "on-tertiary-fixed": "#351000",
-                        "surface-variant": "#e4e2e2",
-                        "on-secondary-container": "#002f74",
-                        "on-primary": "#ffffff",
-                        "surface-tint": "#006a6a",
-                        "tertiary-fixed-dim": "#ffb693",
-                        "surface": "#fbf9f8",
-                        "inverse-surface": "#303030",
-                        "primary-fixed": "#91f3f2",
-                        "on-tertiary-container": "#622805",
-                        "inverse-primary": "#74d6d6",
-                        "secondary-container": "#6a98fe",
-                        "on-primary-container": "#004141",
-                        "on-secondary": "#ffffff",
-                        "clinical-white": "#FFFFFF",
+                    colors: {
+                        "primary-container": "#4db2b2", "on-primary-fixed": "#002020", "inverse-on-surface": "#f2f0f0",
+                        "surface-container": "#efeded", "on-secondary-fixed-variant": "#00429b", "on-background": "#1b1c1c",
+                        "tertiary-fixed": "#ffdbcc", "on-tertiary": "#ffffff", "error": "#ba1a1a",
+                        "primary-fixed-dim": "#74d6d6", "outline": "#6e7979", "background": "#fbf9f8",
+                        "surface-container-low": "#f5f3f3", "on-primary-fixed-variant": "#004f50",
+                        "on-secondary-fixed": "#001945", "error-container": "#ffdad6", "on-surface-variant": "#3e4949",
+                        "surface-container-high": "#eae8e7", "on-tertiary-fixed-variant": "#733512",
+                        "secondary-fixed": "#d9e2ff", "on-error": "#ffffff", "outline-variant": "#bdc9c8",
+                        "primary": "#006a6a", "surface-container-highest": "#e4e2e2", "surface-dim": "#dbdad9",
+                        "surface-container-lowest": "#ffffff", "on-error-container": "#93000a", "deep-slate": "#333333",
+                        "surface-bright": "#fbf9f8", "secondary-fixed-dim": "#b0c6ff", "secondary": "#225abc",
+                        "surface-mist": "#EBF9F9", "on-surface": "#1b1c1c", "tertiary": "#914c27",
+                        "on-tertiary-fixed": "#351000", "surface-variant": "#e4e2e2", "on-secondary-container": "#002f74",
+                        "on-primary": "#ffffff", "surface-tint": "#006a6a", "tertiary-fixed-dim": "#ffb693",
+                        "surface": "#fbf9f8", "inverse-surface": "#303030", "primary-fixed": "#91f3f2",
+                        "on-tertiary-container": "#622805", "inverse-primary": "#74d6d6", "secondary-container": "#6a98fe",
+                        "on-primary-container": "#004141", "on-secondary": "#ffffff", "clinical-white": "#FFFFFF",
                         "tertiary-container": "#e38e64"
                     },
-                    "borderRadius": {
-                        "DEFAULT": "0.25rem",
-                        "lg": "0.5rem",
-                        "xl": "0.75rem",
-                        "full": "9999px"
-                    },
-                    "spacing": {
-                        "container-max": "1200px",
-                        "stack-lg": "48px",
-                        "gutter": "24px",
-                        "margin-desktop": "64px",
-                        "base": "8px",
-                        "stack-md": "24px",
-                        "margin-mobile": "20px",
-                        "stack-sm": "12px"
-                    },
-                    "fontFamily": {
-                        "display-lg": ["Manrope"],
-                        "label-md": ["Plus Jakarta Sans"],
-                        "headline-lg-mobile": ["Manrope"],
-                        "body-lg": ["Plus Jakarta Sans"],
-                        "headline-md": ["Manrope"],
-                        "caption": ["Plus Jakarta Sans"],
-                        "headline-lg": ["Manrope"],
-                        "body-md": ["Plus Jakarta Sans"]
-                    },
-                    "fontSize": {
-                        "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
-                        "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600"}],
-                        "headline-lg-mobile": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
-                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
-                        "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "500"}],
-                        "caption": ["12px", {"lineHeight": "16px", "fontWeight": "400"}],
-                        "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
-                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}]
-                    }
-                },
-            },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                    spacing: { "container-max": "1200px", "stack-lg": "48px", "gutter": "24px", "margin-desktop": "64px", "base": "8px", "stack-md": "24px", "margin-mobile": "20px", "stack-sm": "12px" },
+                    fontFamily: { "display-lg": ["Manrope"], "label-md": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Manrope"], "body-lg": ["Plus Jakarta Sans"], "headline-md": ["Manrope"], "caption": ["Plus Jakarta Sans"], "headline-lg": ["Manrope"], "body-md": ["Plus Jakarta Sans"] },
+                    fontSize: { "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}], "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600"}], "headline-lg-mobile": ["24px", {"lineHeight": "32px", "fontWeight": "600"}], "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}], "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "500"}], "caption": ["12px", {"lineHeight": "16px", "fontWeight": "400"}], "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "600"}], "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}] }
+                }
+            }
         }
     </script>
-<style>
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-        }
-        .ambient-shadow {
-            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.04);
-        }
-    </style>
 </head>
 <body class="bg-surface font-body-md text-on-surface">
-<!-- TopNavBar -->
+
 <header class="fixed top-0 w-full z-50 bg-clinical-white/90 backdrop-blur-md shadow-sm">
-    <nav class="flex justify-between items-center h-20 px-4 md:px-margin-desktop max-w-container-max mx-auto transition-all duration-300">
-        <div class="flex items-center gap-3">
-            <a class="font-headline-md text-headline-md font-bold text-primary leading-tight" href="index.html">
+    <nav class="flex justify-between items-center h-20 px-3 sm:px-4 md:px-margin-desktop max-w-container-max mx-auto gap-2">
+        <div class="flex items-center min-w-0 shrink-1">
+            <a class="text-[19px] leading-tight font-bold text-primary tracking-tight whitespace-nowrap md:font-headline-md md:text-headline-md" href="index.html">
                 Beata Stróżna
             </a>
         </div>
-        
-        <!-- Desktop Navigation -->
         <ul class="hidden md:flex gap-8 items-center">
             <li><a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="index.html">Strona główna</a></li>
             <li><a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="o-mnie.html">O mnie</a></li>
-            <li><a class="text-primary font-semibold border-b-2 border-primary transition-colors font-label-md text-label-md" href="oferta.html">Oferta</a></li>
+            <li><a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="oferta.html">Oferta</a></li>
             <li><a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="galeria.html">Galeria</a></li>
             <li><a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="kontakt.html">Kontakt</a></li>
         </ul>
-        
-        <div class="flex items-center gap-4">
-            <a class="bg-primary text-on-primary px-6 py-2.5 rounded-full font-label-md text-label-md hover:opacity-90 transition-all shadow-md inline-flex items-center justify-center" href="tel:+48782638597">
+        <div class="flex items-center gap-1.5 sm:gap-4 shrink-0">
+            <a class="bg-primary text-on-primary text-xs sm:text-label-md h-9 sm:h-11 px-3 sm:px-6 rounded-full font-semibold hover:opacity-90 transition-all shadow-md inline-flex items-center justify-center whitespace-nowrap" href="tel:+48782638597">
                 Umów wizytę
             </a>
-            <!-- PRZYCISK HAMBURGERA -->
-            <button id="menuBtn" class="block md:hidden text-primary p-2 focus:outline-none">
-                <span class="material-symbols-outlined text-[32px] block" id="menuIcon">menu</span>
+            <button id="menuBtn" class="block md:hidden text-primary p-2 focus:outline-none rounded-full transition-colors hover:bg-primary/5 relative w-11 h-11" aria-label="Menu">
+                <div class="absolute inset-0 flex items-center justify-center">
+                    <svg class="w-6 h-6 transform transition-all duration-300 scale-100 rotate-0 opacity-100" id="iconMenu" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                    <svg class="w-6 h-6 transform transition-all duration-300 scale-50 -rotate-90 opacity-0 absolute" id="iconClose" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path></svg>
+                </div>
             </button>
         </div>
     </nav>
-
-    <!-- PANEL MENU MOBILNEGO -->
     <div id="mobileMenu" class="hidden fixed top-20 left-0 w-full bg-clinical-white shadow-lg border-t border-outline-variant/20 py-6 px-4 md:hidden z-40">
         <ul class="flex flex-col gap-5 text-center">
             <li><a class="block text-on-surface-variant hover:text-primary py-2 font-label-md text-lg" href="index.html">Strona główna</a></li>
             <li><a class="block text-on-surface-variant hover:text-primary py-2 font-label-md text-lg" href="o-mnie.html">O mnie</a></li>
-            <li><a class="block text-primary font-semibold py-2 font-label-md text-lg" href="oferta.html">Oferta</a></li>
+            <li><a class="block text-on-surface-variant hover:text-primary py-2 font-label-md text-lg" href="oferta.html">Oferta</a></li>
             <li><a class="block text-on-surface-variant hover:text-primary py-2 font-label-md text-lg" href="galeria.html">Galeria</a></li>
             <li><a class="block text-on-surface-variant hover:text-primary py-2 font-label-md text-lg" href="kontakt.html">Kontakt</a></li>
         </ul>
     </div>
 </header>
+
 <main class="pt-20">
-<!-- Hero Section -->
 <section class="relative h-[300px] md:h-[400px] overflow-hidden bg-primary flex items-center justify-center text-center">
-<img alt="Katalog Zabiegów" class="absolute inset-0 w-full h-full object-cover opacity-30 mix-blend-overlay" src="https://lh3.googleusercontent.com/aida-public/AB6AXuALezBefnNddfOkuRglOp9FmzV6zUxl5rdNt3rkHhtdiEQhtR3eqznsNmU_18j3e2hvqF1sd4B7JUVZQlNPxXgcXtsjrf5zzkfAIuEuIh7aA8smCMOU3KYovh6QjRImzsJsGZ6wnOx2S6LEwRxgM9VUivLi9KvJQSDfK4KG1Kj4Y0ZAYUe6Vhlksz_NmRZIroM7wpjbA2MMtvA1S_YM10ixNnR7UJD0Q_nRd9Pghl-dEII7lgG_2-jzkIVP-I1BwdBS0pRomWFF52hm"/>
-<div class="relative z-10 px-margin-mobile">
-<h1 class="font-display-lg text-display-lg text-on-primary mb-4 md:text-6xl">Oferta Zabiegów</h1>
-<p class="font-body-lg text-body-lg text-primary-fixed max-w-2xl mx-auto">Profesjonalne terapie manualne i masaże dostosowane do Twoich potrzeb zdrowotnych.</p>
-</div>
-</section>
-<!-- Main Treatments Grid -->
-<section class="py-stack-lg bg-surface-mist/30">
-<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
-<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
-<!-- Masaż Leczniczy -->
-<div class="md:col-span-8 bg-clinical-white rounded-lg p-stack-md ambient-shadow flex flex-col md:flex-row gap-gutter hover:translate-y-[-4px] transition-transform">
-<div class="md:w-1/2 rounded-lg overflow-hidden h-64 md:h-auto">
-<img alt="Masaż Leczniczy" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2MbD5Jsz5P__wRMGO-HdWVs728bUi8csWThMpF1N8ZZdpHsmwqsI5V7cECTE3zyU6lkK-SA-xg5yEth2aneTcjnvkQmdsTJwPwA5MM02WFjw3lxQFSeefPDUexFq21GvOy0cJTot2Vxbu1QpSXqMu6Gm5ridvzKyuZpIaB8z0cG8IkM1TaEJNWVErsqItsFddTcDsQ5aZED_b9DPyJ_VBz0I72uh0w0DQ42RHo2pcdPKZ1euF62x_f_KFM1CY__cOuc_f9S-QwW0P"/>
-</div>
-<div class="md:w-1/2 flex flex-col justify-center">
-<span class="bg-primary/10 text-primary font-label-md text-label-md px-4 py-1 rounded-full w-fit mb-4">Najczęściej wybierany</span>
-<h3 class="font-headline-lg text-headline-lg text-primary mb-2">Masaż Leczniczy</h3>
-<p class="text-on-surface-variant mb-6">Koncentruje się na schorzeniach ortopedycznych i neurologicznych. Pomocny w bólach kręgosłupa, głowy, stanach lękowych i napięciach mięśniowych.</p>
-<a class="w-full py-3 px-6 bg-primary text-on-primary rounded-lg font-semibold hover:opacity-90 transition-all text-center" href="kontakt.html">Zapytaj o cenę</a>
-</div>
-</div>
-<!-- Masaż Klasyczny -->
-<div class="md:col-span-4 bg-clinical-white rounded-lg p-stack-md ambient-shadow hover:translate-y-[-4px] transition-transform flex flex-col">
-<div class="w-full h-48 rounded-lg overflow-hidden mb-6">
-<img alt="Masaż Klasyczny" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCC45annQ4sxVIiJCmi2f64AnummoycYYPLggghfGbF0DGCwD2GYxePXDiYMO_Xsuv3cYtAMy-hLGcRTCOUFsIkRe6E3XmzU_-Z5P27QopAAxLwT2H8n4BKEwTyzO9wyxvyrLBcWt6KRitahlJ5OwZJHhCrVkYRWPbHy-tCD-IVt6rlXR_PjkdOvP164epPh_Q78YYPCl0urm6YJqL-LvsCq1rDzfKXQNFVyte3vmRpLYHx3PXRYlwvzpeQj1PEdf1ufNMVn4fl1FvZ"/>
-</div>
-<h3 class="font-headline-md text-headline-md text-primary mb-2">Masaż Klasyczny</h3>
-<p class="text-on-surface-variant mb-6 flex-grow">Stosowany profilaktycznie i leczniczo w schorzeniach reumatycznych, napięciach mięśni oraz stanach pourazowych.</p>
-<a class="w-full py-3 px-6 bg-primary text-on-primary rounded-lg font-semibold hover:opacity-90 transition-all text-center" href="kontakt.html">Zapytaj o cenę</a>
-</div>
-<!-- Masaż Segmentarny -->
-<div class="md:col-span-4 bg-clinical-white rounded-lg p-stack-md ambient-shadow hover:translate-y-[-4px] transition-transform flex flex-col">
-<div class="w-full h-48 rounded-lg overflow-hidden mb-6">
-<img alt="Masaż Segmentarny" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcAS9IKZ6e_TjuJ_JbKbA9QDNglS3Dqgm1c7_5XnBWUJrBtr0RIlQ6n5zrgTGR49ybmWHq9irbRbPm2tSKyC2aoHQ3tdiEBnd3bowuJ06-CT7FmE7MHOXeEkqX6oUhntf1VwFBS1ScdCnvuCXc_XMeytM7y4RybU9IfWLYvT4Nyyxa6YemCfuETHuB0vxosU2mQEkHLF3quWNCF-YKHblChzmnjVWm2a3HkxbGpCPNuLiUk6I0g9IncASkJJlc5WUx9gZioD6LvFVn"/>
-</div>
-<h3 class="font-headline-md text-headline-md text-primary mb-2">Masaż Segmentarny</h3>
-<p class="text-on-surface-variant mb-6 flex-grow">Szczególne zastosowanie w leczeniu chorób narządów wewnętrznych. Pozwala na wykrywanie i usuwanie zmian chorobowych.</p>
-<a class="w-full py-3 px-6 bg-primary text-on-primary rounded-lg font-semibold hover:opacity-90 transition-all text-center" href="kontakt.html">Zapytaj o cenę</a>
-</div>
-<!-- Masaż Gorącymi Kamieniami -->
-<div class="md:col-span-4 bg-clinical-white rounded-lg p-stack-md ambient-shadow hover:translate-y-[-4px] transition-transform flex flex-col">
-<div class="w-full h-48 rounded-lg overflow-hidden mb-6">
-<img alt="Gorące Kamienie" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMC3YMc2QSh54yZWIFFKTl7AOeDzzFDe8A4_oLxGObaPAKvcU1Aro1uTM0qAppFKOrgt-2kfzzLjzybmazMv4kptPAlzUAKipAeCQ5yhHdaxj2L-Q6sNLLY_8a_2sF0wL89X2D5C53dAuojMBUAPTjEduegJU8Fz0m47ssYXyTsTdj8naLRQ30LzFK2vNhvHP5n3eQDFQTy1QAbTZ_tfCspTNX1wHrqVqyV0J0JzjiuC_9JaZgo5ELsohoFZ9igG31kGyCN03mcsmC"/>
-</div>
-<h3 class="font-headline-md text-headline-md text-primary mb-2">Gorące Kamienie</h3>
-<p class="text-on-surface-variant mb-6 flex-grow">Głęboko relaksujący masaż bazaltowymi kamieniami. Rozluźnia napięcia, redukuje stres i harmonizuje przepływ energii.</p>
-<a class="w-full py-3 px-6 bg-primary text-on-primary rounded-lg font-semibold hover:opacity-90 transition-all text-center" href="kontakt.html">Zapytaj o cenę</a>
-</div>
-<!-- Drenaż Limfatyczny -->
-<div class="md:col-span-4 bg-clinical-white rounded-lg p-stack-md ambient-shadow hover:translate-y-[-4px] transition-transform flex flex-col">
-<div class="w-full h-48 rounded-lg overflow-hidden mb-6">
-<img alt="Drenaż Limfatyczny" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBeEyu9H_2Jz0wYYzXErYP55B8es0qXvtuYAFFea74LhX_LybUbHXNQYyP_dFPizu3KhRCAZInOzj1xQHLeW2_PqliR9GJynsjhxnreHJ-I4UTje2rRuYpkr1WEQrCcUWQWQR7E4sLA6W79MT6qozTDNoAqNUTP61R7A8jOBj65yEb7UcYzLnmCBfZq8U6-SN4xjwu0kcvomcQJSdTVquFl21BoYNoAoVcVJQBViK3HSKjV0kNKebNfZXtCxrZYJ8BdBXZ0VtpQUwLq"/>
-</div>
-<h3 class="font-headline-md text-headline-md text-primary mb-2">Drenaż Limfatyczny</h3>
-<p class="text-on-surface-variant mb-6 flex-grow">Usprawnia krążenie limfy, redukuje obrzęki zastoinowe i limfatyczne oraz wspomaga usuwanie toksyn.</p>
-<a class="w-full py-3 px-6 bg-primary text-on-primary rounded-lg font-semibold hover:opacity-90 transition-all text-center" href="kontakt.html">Zapytaj o cenę</a>
-</div>
-<!-- Terapia Przeciwobrzękowa & Terapia Manualna -->
-<div class="md:col-span-6 bg-clinical-white rounded-lg p-stack-md ambient-shadow flex flex-col md:flex-row gap-6">
-<div class="md:w-1/3 rounded-lg overflow-hidden h-40 md:h-full">
-<img alt="Terapia Przeciwobrzękowa" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6fpwAZBx_Jv-s4E1CgmOYhoY4yU8kR23-U_pO_2_HJ0CytTb0j_Q-JnQqMUbqLKTkjOXH5x4JCgFeleolBc7xUSQZ0xlUL8lMkF9D8z_JvbmJdo4sWvLHo328FMuDhxQV9UcKaJ3WCzqnyS5dWPW0NO4z9PZEuWoMs_KBgNj3OdXdfq9cTAYSHv38vZ_4aVYncjOszKna5W8Ijr4BvawhGrhnw-BrYn_0mPc_dDWvT4dbHpCYU1qoeFBkoB-4BBssff63rOt_gRCR"/>
-</div>
-<div class="md:w-2/3 flex flex-col justify-center">
-<h3 class="font-headline-md text-headline-md text-primary mb-2">Terapia Przeciwobrzękowa</h3>
-<p class="text-on-surface-variant mb-4">Kompleksowe połączenie drenażu ręcznego, kompresji BOA i bandażowania dla najlepszych efektów.</p>
-<a class="w-fit py-2 px-6 bg-primary text-on-primary rounded-lg font-semibold hover:opacity-90 transition-all" href="kontakt.html">Zapytaj o cenę</a>
-</div>
-</div>
-<div class="md:col-span-6 bg-clinical-white rounded-lg p-stack-md ambient-shadow flex flex-col md:flex-row gap-6">
-<div class="md:w-1/3 rounded-lg overflow-hidden h-40 md:h-full">
-<img alt="Terapia Manualna" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbrtPcsZv1_j9-7WEz0NZKX9hMilTNjoR70tWel1b43Vgee_qCdVZaYfu4tMLf28vkfNfmpUFbV8db37p5nhCL_KAQhtt_QsIktKy4JpAn1WaBKemODPRDPc82KrP7ODDcNymhZj_qTezM-J24Y_Pt7o0eWZOlGonB7V_vzJCFuQ_Wzj3ZVSR9qtVJY2iHqYAMZrmt3jVpCXVJTX805tFqVIxHgVDUJda5t29RWH9Vgx0I-M9vtFKaNiKQ1WJJT4IlJeCJU90WJpa9"/>
-</div>
-<div class="md:w-2/3 flex flex-col justify-center">
-<h3 class="font-headline-md text-headline-md text-primary mb-2">Terapia Manualna</h3>
-<p class="text-on-surface-variant mb-4">Specjalistyczne techniki pracy z kręgosłupem i stawami w celu przywrócenia sprawności i redukcji bólu.</p>
-<a class="w-fit py-2 px-6 bg-primary text-on-primary rounded-lg font-semibold hover:opacity-90 transition-all" href="kontakt.html">Zapytaj o cenę</a>
-</div>
-</div>
-<!-- Additional Services -->
-<div class="md:col-span-4 bg-clinical-white rounded-lg p-6 ambient-shadow flex flex-col">
-<div class="bg-primary/5 w-full h-32 rounded-lg flex items-center justify-center mb-4">
-<span class="material-symbols-outlined text-primary text-5xl">face_retouching_natural</span>
-</div>
-<h3 class="font-headline-md text-headline-md text-primary mb-2">Masaż Kobido</h3>
-<p class="text-on-surface-variant mb-4 flex-grow">Starożytny japoński masaż twarzy dający efekt naturalnego liftingu oraz głębokiego odprężenia.</p>
-<a class="w-full py-2.5 px-6 bg-primary text-on-primary rounded-lg font-semibold hover:opacity-90 transition-all text-center" href="kontakt.html">Zapytaj o cenę</a>
-</div>
-<div class="md:col-span-4 bg-clinical-white rounded-lg p-6 ambient-shadow flex flex-col">
-<div class="bg-primary/5 w-full h-32 rounded-lg flex items-center justify-center mb-4">
-<span class="material-symbols-outlined text-primary text-5xl">air</span>
-</div>
-<h3 class="font-headline-md text-headline-md text-primary mb-2">Masaż Pneumatyczny BOA</h3>
-<p class="text-on-surface-variant mb-4 flex-grow">Sekwencyjny masaż uciskowy. Idealny w walce z obrzękami, cellulitem oraz wspierający regenerację po kontuzjach.</p>
-<a class="w-full py-2.5 px-6 bg-primary text-on-primary rounded-lg font-semibold hover:opacity-90 transition-all text-center" href="kontakt.html">Zapytaj o cenę</a>
-</div>
-<div class="md:col-span-4 bg-clinical-white rounded-lg p-6 ambient-shadow flex flex-col">
-<div class="bg-primary/5 w-full h-32 rounded-lg flex items-center justify-center mb-4">
-<span class="material-symbols-outlined text-primary text-5xl">spa</span>
-</div>
-<h3 class="font-headline-md text-headline-md text-primary mb-2">Aromaterapeutyczny</h3>
-<p class="text-on-surface-variant mb-4 flex-grow">Głęboka relaksacja z użyciem zapachowych świec lub olejków eterycznych dla ukojenia zmysłów i ciała.</p>
-<a class="w-full py-2.5 px-6 bg-primary text-on-primary rounded-lg font-semibold hover:opacity-90 transition-all text-center" href="kontakt.html">Zapytaj o cenę</a>
-</div>
-<!-- Final Grid Row -->
-<div class="md:col-span-3 bg-clinical-white rounded-lg p-6 ambient-shadow flex flex-col">
-<h3 class="font-headline-md text-headline-md text-primary mb-2">Lampa Sollux</h3>
-<p class="text-on-surface-variant mb-4 flex-grow">Promienie IR łagodzące stany zapalne i bóle. Zabieg przygotowawczy do masażu.</p>
-<a class="w-full py-2 px-6 bg-primary text-on-primary rounded-lg font-semibold hover:opacity-90 transition-all text-center" href="kontakt.html">Zapytaj o cenę</a>
-</div>
-<div class="md:col-span-3 bg-clinical-white rounded-lg p-6 ambient-shadow flex flex-col">
-<h3 class="font-headline-md text-headline-md text-primary mb-2">Masaż Sportowy</h3>
-<p class="text-on-surface-variant mb-4 flex-grow">Przyspiesza regenerację po wysiłku i zmniejsza ryzyko kontuzji.</p>
-<a class="w-full py-2 px-6 bg-primary text-on-primary rounded-lg font-semibold hover:opacity-90 transition-all text-center" href="kontakt.html">Zapytaj o cenę</a>
-</div>
-<div class="md:col-span-3 bg-clinical-white rounded-lg p-6 ambient-shadow flex flex-col">
-<h3 class="font-headline-md text-headline-md text-primary mb-2">Bańka Chińska</h3>
-<p class="text-on-surface-variant mb-4 flex-grow">Skuteczna redukcja cellulitu oraz ujędrnianie skóry poprzez masaż podciśnieniowy.</p>
-<a class="w-full py-2 px-6 bg-primary text-on-primary rounded-lg font-semibold hover:opacity-90 transition-all text-center" href="kontakt.html">Zapytaj o cenę</a>
-</div>
-<div class="md:col-span-3 bg-clinical-white rounded-lg p-6 ambient-shadow flex flex-col">
-<h3 class="font-headline-md text-headline-md text-primary mb-2">Ultradźwięki</h3>
-<p class="text-on-surface-variant mb-4 flex-grow">Działają przeciwbólowo, przyspieszają gojenie i regenerację uszkodzonych tkanek.</p>
-<a class="w-full py-2 px-6 bg-primary text-on-primary rounded-lg font-semibold hover:opacity-90 transition-all text-center" href="kontakt.html">Zapytaj o cenę</a>
-</div>
-</div>
-</div>
-</section>
-<!-- Voucher Section -->
-<section class="py-stack-lg bg-clinical-white">
-<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
-<div class="bg-primary-container/10 rounded-lg overflow-hidden flex flex-col md:flex-row items-center">
-<div class="md:w-1/2 p-stack-md md:p-stack-lg">
-<h2 class="font-display-lg text-display-lg text-primary mb-6">Zrób komuś prezent</h2>
-<p class="font-body-lg text-body-lg text-on-surface-variant mb-8">Voucher na masaż to idealny upominek dla bliskiej osoby. Podaruj chwilę relaksu, ulgę w bólu i profesjonalną opiekę terapeutyczną.</p>
-<div class="space-y-4 mb-10">
-<div class="flex items-center gap-3">
-<span class="material-symbols-outlined text-primary">check_circle</span>
-<span class="font-body-md text-body-md">Elegancka forma papierowa lub PDF</span>
-</div>
-<div class="flex items-center gap-3">
-<span class="material-symbols-outlined text-primary">check_circle</span>
-<span class="font-body-md text-body-md">Ważność 6 miesięcy od daty zakupu</span>
-</div>
-<div class="flex items-center gap-3">
-<span class="material-symbols-outlined text-primary">check_circle</span>
-<span class="font-body-md text-body-md">Możliwość wyboru konkretnego zabiegu lub kwoty</span>
-</div>
-</div>
-<a class="bg-primary text-on-primary px-10 py-4 rounded-full font-label-md text-label-md hover:scale-105 transition-transform flex items-center justify-center w-fit gap-2 shadow-lg" href="kontakt.html">
-                            Zamów Voucher <span class="material-symbols-outlined">card_giftcard</span>
-</a>
-</div>
-<div class="md:w-1/2 h-[400px] w-full relative">
-<img alt="Voucher Prezentowy" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpSEPXR5t22QrcBUTnrsQRfjNlI0gk7RS-AzSjQMhbdnjDFHQPZ-2zaJR1KyHnoVY91cBFcga6fyW5wHHBEjoL0c0TKHDkIf0d11J3BgAFy7kXI5S_rMU6bGIAxPRFjzLUy9wD-a5Wsqd1ITfV684gPIVeZhFP6gTbVjuMFvaRq_BTVXScGNQ2TYgNpWM1VSxIMdkxqWj5D_d1okWL1QJrH2vx-nF1KyPU6e85fWv6ypcHNQoBEOjrV9pTOgutAOXbcTRHmUhkBJRG"/>
-</div>
-</div>
-</div>
-</section>
-<!-- Call to Action -->
-<section class="bg-primary-container py-stack-lg text-center">
-<div class="max-w-container-max mx-auto px-margin-mobile">
-<h2 class="font-headline-lg text-headline-lg text-on-primary-container mb-6">Nie wiesz jaki masaż wybrać?</h2>
-<p class="font-body-lg text-body-lg text-on-primary-container/80 mb-8 max-w-xl mx-auto">Skonsultuj się ze mną. Podczas pierwszej wizyty dobierzemy terapię idealną dla Twojego stanu zdrowia.</p>
-<div class="flex flex-col items-center space-y-4">
-<a class="inline-block border-2 border-on-primary-container text-on-primary-container px-10 py-4 rounded-full font-label-md text-label-md hover:bg-on-primary-container hover:text-primary-container transition-colors shadow-md" href="kontakt.html">
-                        Skontaktuj się ze mną
-                    </a>
-<div class="text-on-primary-container/90 space-y-1">
-<p class="flex items-center justify-center gap-2"><span class="material-symbols-outlined text-sm">call</span> +48 782 638 597</p>
-<p class="flex items-center justify-center gap-2"><span class="material-symbols-outlined text-sm">mail</span> biuro@masazleczniczybeata.pl</p>
-<p class="flex items-center justify-center gap-2"><span class="material-symbols-outlined text-sm">location_on</span> <a class="hover:underline" href="https://www.google.com/maps/place/Makowa+14,+55-220+Jelcz-Laskowice" target="_blank">ul. Makowa nr 14, 55-220 Jelcz-Laskowice</a></p>
-</div>
-</div>
-</div>
-</section>
-</main>
-<!-- Footer -->
+        <img alt="Katalog Zabiegów" class="absolute inset-0 w-full h-full object-cover opacity-30 mix-blend-overlay" src="https://lh3.googleusercontent.com/aida-public/AB6AXuALezBefnNddfOkuRglOp9FmzV6zUxl5rdNt3rkHhtdiEQhtR3eqznsNmU_18j3e2hvqF1sd4B7JUVZQlNPxXgcXtsjrf5zzkfAIuEuIh7aA8smCMOU3KYovh6QjRImzsJsGZ6wnOx2S6LEwRxgM9VUivLi9KvJQSDfK4KG1Kj4Y0ZAYUe6Vhlksz_NmRZIroM7wpjbA2MMtvA1S_YM10ixNnR7UJD0Q_nRd9Pghl-dEII7lgG_2-jzkIVP-I1BwdBS0pRomWFF52hm"/>
+        <div class="relative z-10 px-margin-mobile">
+            <h1 class="font-display-lg text-display-lg text-on-primary mb-4 md:text-6xl">Oferta Zabiegów</h1>
+            <p class="font-body-lg text-body-lg text-primary-fixed max-w-2xl mx-auto">Profesjonalne terapie manualne i masaże dostosowane do Twoich potrzeb zdrowotnych.</p>
+        </div>
+    </section>
+
+    <section class="py-stack-lg bg-surface-mist/30">
+        <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+                <!-- Masaż Leczniczy -->
+                <div class="md:col-span-8 bg-clinical-white rounded-lg p-stack-md ambient-shadow flex flex-col md:flex-row gap-gutter hover:translate-y-[-4px] transition-transform">
+                    <div class="md:w-1/2 rounded-lg overflow-hidden h-64 md:h-auto"><img alt="Masaż Leczniczy" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2MbD5Jsz5P__wRMGO-HdWVs728bUi8csWThMpF1N8ZZdpHsmwqsI5V7cECTE3zyU6lkK-SA-xg5yEth2aneTcjnvkQmdsTJwPwA5MM02WFjw3lxQFSeefPDUexFq21GvOy0cJTot2Vxbu1QpSXqMu6Gm5ridvzKyuZpIaB8z0cG8IkM1TaEJNWVErsqItsFddTcDsQ5aZED_b9DPyJ_VBz0I72uh0w0DQ42RHo2pcdPKZ1euF62x_f_KFM1CY__cOuc_f9S-QwW0P"/></div>
+                    <div class="md:w-1/2 flex flex-col justify-center">
+                        <span class="bg-primary/10 text-primary font-label-md text-label-md px-4 py-1 rounded-full w-fit mb-4">Najczęściej wybierany</span>
+                        <h3 class="font-headline-lg text-headline-lg text-primary mb-2">Masaż Leczniczy</h3>
+                        <p class="text-on-surface-variant mb-6">Koncentruje się na schorzeniach ortopedycznych i neurologicznych. Pomocny w bólach kręgosłupa, głowy, stanach lękowych i napięciach mięśniowych.</p>
+                        <a class="w-full py-3 px-6 bg-primary text-on-primary rounded-lg font-semibold hover:opacity-90 transition-all text-center" href="kontakt.html">Zapytaj o cenę</a>
+                    </div>
+                </div>
+
+                <!-- Pozostałe sekcje zachowane 1:1 -->
+                <!-- Masaż Klasyczny -->
+                <div class="md:col-span-4 bg-clinical-white rounded-lg p-stack-md ambient-shadow hover:translate-y-[-4px] transition-transform flex flex-col">
+                    <div class="w-full h-48 rounded-lg overflow-hidden mb-6"><img alt="Masaż Klasyczny" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCC45annQ4sxVIiJCmi2f64AnummoycYYPLggghfGbF0DGCwD2GYxePXDiYMO_Xsuv3cYtAMy-hLGcRTCOUFsIkRe6E3XmzU_-Z5P27QopAAxLwT2H8n4BKEwTyzO9wyxvyrLBcWt6KRitahlJ5OwZJHhCrVkYRWPbHy-tCD-IVt6rlXR_PjkdOvP164epPh_Q78YYPCl0urm6YJqL-LvsCq1rDzfKXQNFVyte3vmRpLYHx3PXRYlwvzpeQj1PEdf1ufNMVn4fl1FvZ"/></div>
+                    <h3 class="font-headline-md text-headline-md text-primary mb-2">Masaż Klasyczny</h3>
+                    <p class="text-on-surface-variant mb-6 flex-grow">Stosowany profilaktycznie i leczniczo w schorzeniach reumatycznych, napięciach mięśni oraz stanach pourazowych.</p>
+                    <a class="w-full py-3 px-6 bg-primary text-on-primary rounded-lg font-semibold hover:opacity-90 transition-all text-center" href="kontakt.html">Zapytaj o cenę</a>
+                </div>
+
+                <!-- Masaż Segmentarny -->
+                <div class="md:col-span-4 bg-clinical-white rounded-lg p-stack-md ambient-shadow hover:translate-y-[-4px] transition-transform flex flex-col">
+                    <div class="w-full h-48 rounded-lg overflow-hidden mb-6"><img alt="Masaż Segmentarny" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcAS9IKZ6e_TjuJ_JbKbA9QDNglS3Dqgm1c7_5XnBWUJrBtr0RIlQ6n5zrgTGR49ybmWHq9irbRbPm2tSKyC2aoHQ3tdiEBnd3bowuJ06-CT7FmE7MHOXeEkqX6oUhntf1VwFBS1ScdCnvuCXc_XMeytM7y4RybU9IfWLYvT4Nyyxa6YemCfuETHuB0vxosU2mQEkHLF3quWNCF-YKHblChzmnjVWm2a3HkxbGpCPNuLiUk6I0g9IncASkJJlc5WUx9gZioD6LvFVn"/></div>
+                    <h3 class="font-headline-md text-headline-md text-primary mb-2">Masaż Segmentarny</h3>
+                    <p class="text-on-surface-variant mb-6 flex-grow">Szczególne zastosowanie w leczeniu chorób narządów wewnętrznych. Pozwala na wykrywanie i usuwanie zmian chorobowych.</p>
+                    <a class="w-full py-3 px-6 bg-primary text-on-primary rounded-lg font-semibold hover:opacity-90 transition-all text-center" href="kontakt.html">Zapytaj o cenę</a>
+                </div>
+
+                <!-- Masaż Gorącymi Kamieniami -->
+                <div class="md:col-span-4 bg-clinical-white rounded-lg p-stack-md ambient-shadow hover:translate-y-[-4px] transition-transform flex flex-col">
+                    <div class="w-full h-48 rounded-lg overflow-hidden mb-6"><img alt="Gorące Kamienie" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMC3YMc2QSh54yZWIFFKTl7AOeDzzFDe8A4_oLxGObaPAKvcU1Aro1uTM0qAppFKOrgt-2kfzzLjzybmazMv4kptPAlzUAKipAeCQ5yhHdaxj2L-Q6sNLLY_8a_2sF0wL89X2D5C53dAuojMBUAPTjEduegJU8Fz0m47ssYXyTsTdj8naLRQ30LzFK2vNhvHP5n3eQDFQTy1QAbTZ_tfCspTNX1wHrqVqyV0J0JzjiuC_9JaZgo5ELsohoFZ9igG31kGyCN03mcsmC"/></div>
+                    <h3 class="font-headline-md text-headline-md text-primary mb-2">Gorące Kamienie</h3>
+                    <p class="text-on-surface-variant mb-6 flex-grow">Głęboko relaksujący masaż bazaltowymi kamieniami. Rozluźnia napięcia, redukuje stres i harmonizuje przepływ energii.</p>
+                    <a class="w-full py-3 px-6 bg-primary text-on-primary rounded-lg font-semibold hover:opacity-90 transition-all text-center" href="kontakt.html">Zapytaj o cenę</a>
+                </div>
+
+                <!-- Drenaż Limfatyczny -->
+                <div class="md:col-span-4 bg-clinical-white rounded-lg p-stack-md ambient-shadow hover:translate-y-[-4px] transition-transform flex flex-col">
+                    <div class="w-full h-48 rounded-lg overflow-hidden mb-6"><img alt="Drenaż Limfatyczny" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBeEyu9H_2Jz0wYYzXErYP55B8es0qXvtuYAFFea74LhX_LybUbHXNQYyP_dFPizu3KhRCAZInOzj1xQHLeW2_PqliR9GJynsjhxnreHJ-I4UTje2rRuYpkr1WEQrCcUWQWQR7E4sLA6W79MT6qozTDNoAqNUTP61R7A8jOBj65yEb7UcYzLnmCBfZq8U6-SN4xjwu0kcvomcQJSdTVquFl21BoYNoAoVcVJQBViK3HSKjV0kNKebNfZXtCxrZYJ8BdBXZ0VtpQUwLq"/></div>
+                    <h3 class="font-headline-md text-headline-md text-primary mb-2">Drenaż Limfatyczny</h3>
+                    <p class="text-on-surface-variant mb-6 flex-grow">Usprawnia krążenie limfy, redukuje obrzęki zastoinowe i limfatyczne oraz wspomaga usuwanie toksyn.</p>
+                    <a class="w-full py-3 px-6 bg-primary text-on-primary rounded-lg font-semibold hover:opacity-90 transition-all text-center" href="kontakt.html">Zapytaj o cenę</a>
+                </div>
+
+                <!-- Terapia Przeciwobrzękowa & Manualna -->
+                <div class="md:col-span-6 bg-clinical-white rounded-lg p-stack-md ambient-shadow flex flex-col md:flex-row gap-6">
+                    <div class="md:w-1/3 rounded-lg overflow-hidden h-40 md:h-full"><img alt="Terapia Przeciwobrzękowa" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6fpwAZBx_Jv-s4E1CgmOYhoY4yU8kR23-U_pO_2_HJ0CytTb0j_Q-JnQqMUbqLKTkjOXH5x4JCgFeleolBc7xUSQZ0xlUL8lMkF9D8z_JvbmJdo4sWvLHo328FMuDhxQV9UcKaJ3WCzqnyS5dWPW0NO4z9PZEuWoMs_KBgNj3OdXdfq9cTAYSHv38vZ_4aVYncjOszKna5W8Ijr4BvawhGrhnw-BrYn_0mPc_dDWvT4dbHpCYU1qoeFBkoB-4BBssff63rOt_gRCR"/></div>
+                    <div class="md:w-2/3 flex flex-col justify-center">
+                        <h3 class="font-headline-md text-headline-md text-primary mb-2">Terapia Przeciwobrzękowa</h3>
+                        <p class="text-on-surface-variant mb-4">Kompleksowe połączenie drenażu ręcznego, kompresji BOA i bandażowania dla najlepszych efektów.</p>
+                        <a class="w-fit py-2 px-6 bg-primary text-on-primary rounded-lg font-semibold hover:opacity-90 transition-all" href="kontakt.html">Zapytaj o cenę</a>
+                    </div>
+                </div>
+
+                <div class="md:col-span-6 bg-clinical-white rounded-lg p-stack-md ambient-shadow flex flex-col md:flex-row gap-6">
+                    <div class="md:w-1/3 rounded-lg overflow-hidden h-40 md:h-full"><img alt="Terapia Manualna" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbrtPcsZv1_j9-7WEz0NZKX9hMilTNjoR70tWel1b43Vgee_qCdVZaYfu4tMLf28vkfNfmpUFbV8db37p5nhCL_KAQhtt_QsIktKy4JpAn1WaBKemODPRDPc82KrP7ODDcNymhZj_qTezM-J24Y_Pt7o0eWZOlGonB7V_vzJCFuQ_Wzj3ZVSR9qtVJY2iHqYAMZrmt3jVpCXVJTX805tFqVIxHgVDUJda5t29RWH9Vgx0I-M9vtFKaNiKQ1WJJT4IlJeCJU90WJpa9"/></div>
+                    <div class="md:w-2/3 flex flex-col justify-center">
+                        <h3 class="font-headline-md text-headline-md text-primary mb-2">Terapia Manualna</h3>
+                        <p class="text-on-surface-variant mb-4">Specjalistyczne techniki pracy z kręgosłupem i stawami w celu przywrócenia sprawności i redukcji bólu.</p>
+                        <a class="w-fit py-2 px-6 bg-primary text-on-primary rounded-lg font-semibold hover:opacity-90 transition-all" href="kontakt.html">Zapytaj o cenę</a>
+                    </div>
+                </div>
+
+                <!-- Dodatkowe usługi -->
+                <div class="md:col-span-4 bg-clinical-white rounded-lg p-6 ambient-shadow flex flex-col">
+                    <div class="bg-primary/5 w-full h-32 rounded-lg flex items-center justify-center mb-4"><span class="material-symbols-outlined text-primary text-5xl">face_retouching_natural</span></div>
+                    <h3 class="font-headline-md text-headline-md text-primary mb-2">Masaż Kobido</h3>
+                    <p class="text-on-surface-variant mb-4 flex-grow">Starożytny japoński masaż twarzy dający efekt naturalnego liftingu oraz głębokiego odprężenia.</p>
+                    <a class="w-full py-2.5 px-6 bg-primary text-on-primary rounded-lg font-semibold hover:opacity-90 transition-all text-center" href="kontakt.html">Zapytaj o cenę</a>
+                </div>
+
+                <div class="md:col-span-4 bg-clinical-white rounded-lg p-6 ambient-shadow flex flex-col">
+                    <div class="bg-primary/5 w-full h-32 rounded-lg flex items-center justify-center mb-4"><span class="material-symbols-outlined text-primary text-5xl">air</span></div>
+                    <h3 class="font-headline-md text-headline-md text-primary mb-2">Masaż Pneumatyczny BOA</h3>
+                    <p class="text-on-surface-variant mb-4 flex-grow">Sekwencyjny masaż uciskowy. Idealny w walce z obrzękami, cellulitem oraz wspierający regenerację po kontuzjach.</p>
+                    <a class="w-full py-2.5 px-6 bg-primary text-on-primary rounded-lg font-semibold hover:opacity-90 transition-all text-center" href="kontakt.html">Zapytaj o cenę</a>
+                </div>
+
+                <div class="md:col-span-4 bg-clinical-white rounded-lg p-6 ambient-shadow flex flex-col">
+                    <div class="bg-primary/5 w-full h-32 rounded-lg flex items-center justify-center mb-4"><span class="material-symbols-outlined text-primary text-5xl">spa</span></div>
+                    <h3 class="font-headline-md text-headline-md text-primary mb-2">Aromaterapeutyczny</h3>
+                    <p class="text-on-surface-variant mb-4 flex-grow">Głęboka relaksacja z użyciem zapachowych świec lub olejków eterycznych dla ukojenia zmysłów i ciała.</p>
+                    <a class="w-full py-2.5 px-6 bg-primary text-on-primary rounded-lg font-semibold hover:opacity-90 transition-all text-center" href="kontakt.html">Zapytaj o cenę</a>
+                </div>
+
+                <!-- Ostatni rząd -->
+                <div class="md:col-span-3 bg-clinical-white rounded-lg p-6 ambient-shadow flex flex-col">
+                    <h3 class="font-headline-md text-headline-md text-primary mb-2">Lampa Sollux</h3>
+                    <p class="text-on-surface-variant mb-4 flex-grow">Promienie IR łagodzące stany zapalne i bóle. Zabieg przygotowawczy do masażu.</p>
+                    <a class="w-full py-2 px-6 bg-primary text-on-primary rounded-lg font-semibold hover:opacity-90 transition-all text-center" href="kontakt.html">Zapytaj o cenę</a>
+                </div>
+                <div class="md:col-span-3 bg-clinical-white rounded-lg p-6 ambient-shadow flex flex-col">
+                    <h3 class="font-headline-md text-headline-md text-primary mb-2">Masaż Sportowy</h3>
+                    <p class="text-on-surface-variant mb-4 flex-grow">Przyspiesza regenerację po wysiłku i zmniejsza ryzyko kontuzji.</p>
+                    <a class="w-full py-2 px-6 bg-primary text-on-primary rounded-lg font-semibold hover:opacity-90 transition-all text-center" href="kontakt.html">Zapytaj o cenę</a>
+                </div>
+                <div class="md:col-span-3 bg-clinical-white rounded-lg p-6 ambient-shadow flex flex-col">
+                    <h3 class="font-headline-md text-headline-md text-primary mb-2">Bańka Chińska</h3>
+                    <p class="text-on-surface-variant mb-4 flex-grow">Skuteczna redukcja cellulitu oraz ujędrnianie skóry poprzez masaż podciśnieniowy.</p>
+                    <a class="w-full py-2 px-6 bg-primary text-on-primary rounded-lg font-semibold hover:opacity-90 transition-all text-center" href="kontakt.html">Zapytaj o cenę</a>
+                </div>
+                <div class="md:col-span-3 bg-clinical-white rounded-lg p-6 ambient-shadow flex flex-col">
+                    <h3 class="font-headline-md text-headline-md text-primary mb-2">Ultradźwięki</h3>
+                    <p class="text-on-surface-variant mb-4 flex-grow">Działają przeciwbólowo, przyspieszają gojenie i regenerację uszkodzonych tkanek.</p>
+                    <a class="w-full py-2 px-6 bg-primary text-on-primary rounded-lg font-semibold hover:opacity-90 transition-all text-center" href="kontakt.html">Zapytaj o cenę</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    </main>
+
 <footer class="bg-surface-container w-full py-6 border-t border-outline-variant/30 text-xs font-normal text-outline">
     <div class="flex flex-col md:flex-row justify-between items-center px-4 md:px-margin-desktop max-w-container-max mx-auto gap-4 text-center md:text-left">
-        
-        <!-- Prawa autorskie -->
-        <div>
-            © 2026 Gabinet Masażu Leczniczego Beata Stróżna
-        </div>
-        
-        <!-- Polityka prywatności -->
-        <div>
-            <a class="hover:text-primary transition-colors" href="polityka-prywatnosci.html">
-                Polityka prywatności i cookies
-            </a>
-        </div>
-        
-        <!-- Podpis autora (subtelny i blady) -->
-        <div class="opacity-80">
-            Projekt i realizacja: 
-            <a class="hover:text-primary transition-colors" href="https://halaczkiewicz.it" target="_blank">
-                halaczkiewicz.it
-            </a>
-        </div>
-
+        <div>© 2026 Gabinet Masażu Leczniczego Beata Stróżna</div>
+        <div><a class="hover:text-primary transition-colors" href="polityka-prywatnosci.html">Polityka prywatności i cookies</a></div>
+        <div class="opacity-80">Projekt i realizacja: <a class="hover:text-primary transition-colors" href="https://halaczkiewicz.it" target="_blank">halaczkiewicz.it</a></div>
     </div>
 </footer>
+
 <script>
-        // Obsługa zmniejszania navbaru podczas scrollowania
-        window.addEventListener('scroll', () => {
-            const nav = document.querySelector('header nav');
-            if (window.scrollY > 20) {
-                nav.classList.remove('h-20');
-                nav.classList.add('h-16');
-            } else {
-                nav.classList.add('h-20');
-                nav.classList.remove('h-16');
-            }
-        });
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const iconMenu = document.getElementById('iconMenu');
+    const iconClose = document.getElementById('iconClose');
 
-        // Obsługa menu mobilnego
-        const menuBtn = document.getElementById('menuBtn');
-        const mobileMenu = document.getElementById('mobileMenu');
-        const menuIcon = document.getElementById('menuIcon');
-
-        menuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-            
-            if (mobileMenu.classList.contains('hidden')) {
-                menuIcon.textContent = 'menu';
-            } else {
-                menuIcon.textContent = 'close';
-            }
-        });
-    </script>
-</body></html>
+    menuBtn.addEventListener('click', () => {
+        const isHidden = mobileMenu.classList.toggle('hidden');
+        if (isHidden) {
+            iconMenu.classList.replace('scale-50', 'scale-100');
+            iconMenu.classList.replace('rotate-90', 'rotate-0');
+            iconMenu.classList.replace('opacity-0', 'opacity-100');
+            iconClose.classList.replace('scale-100', 'scale-50');
+            iconClose.classList.replace('rotate-0', '-rotate-90');
+            iconClose.classList.replace('opacity-100', 'opacity-0');
+        } else {
+            iconMenu.classList.replace('scale-100', 'scale-50');
+            iconMenu.classList.replace('rotate-0', 'rotate-90');
+            iconMenu.classList.replace('opacity-100', 'opacity-0');
+            iconClose.classList.replace('scale-50', 'scale-100');
+            iconClose.classList.replace('-rotate-90', 'rotate-0');
+            iconClose.classList.replace('opacity-0', 'opacity-100');
+        }
+    });
+</script>
+</body>
+</html>

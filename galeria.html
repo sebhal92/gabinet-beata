@@ -47,7 +47,7 @@
         <div class="flex items-center min-w-0 shrink-1">
     <a class="block py-2" href="index.html">
         <img 
-            src="logo.png" 
+            src="images/logo.png" 
             alt="Beata Stróżna - Gabinet Masażu Leczniczego" 
             class="h-8 sm:h-9 md:h-10 w-auto object-contain transition-opacity hover:opacity-80"
         >
@@ -90,7 +90,7 @@
                 
                 <div class="gallery-card bg-clinical-white rounded-xl overflow-hidden shadow-sm border border-outline-variant/30 aspect-square" onclick="openLightbox(0)">
                     <div class="relative w-full h-full overflow-hidden group">
-                        <img src="1.jpg" alt="" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                        <img src="images/1.jpg" alt="" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
                         <div class="absolute inset-0 bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                             <span class="material-symbols-outlined text-primary text-4xl bg-clinical-white/90 p-3 rounded-full shadow">zoom_in</span>
                         </div>
@@ -99,7 +99,7 @@
 
                 <div class="gallery-card bg-clinical-white rounded-xl overflow-hidden shadow-sm border border-outline-variant/30 aspect-square" onclick="openLightbox(1)">
                     <div class="relative w-full h-full overflow-hidden group">
-                        <img src="2.jpg" alt="" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                        <img src="images/2.jpg" alt="" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
                         <div class="absolute inset-0 bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                             <span class="material-symbols-outlined text-primary text-4xl bg-clinical-white/90 p-3 rounded-full shadow">zoom_in</span>
                         </div>
@@ -108,7 +108,7 @@
 
                 <div class="gallery-card bg-clinical-white rounded-xl overflow-hidden shadow-sm border border-outline-variant/30 aspect-square" onclick="openLightbox(2)">
                     <div class="relative w-full h-full overflow-hidden group">
-                        <img src="3.jpg" alt="" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                        <img src="images/3.jpg" alt="" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
                         <div class="absolute inset-0 bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                             <span class="material-symbols-outlined text-primary text-4xl bg-clinical-white/90 p-3 rounded-full shadow">zoom_in</span>
                         </div>
@@ -117,7 +117,7 @@
 
                 <div class="gallery-card bg-clinical-white rounded-xl overflow-hidden shadow-sm border border-outline-variant/30 aspect-square" onclick="openLightbox(3)">
                     <div class="relative w-full h-full overflow-hidden group">
-                        <img src="4.jpg" alt="" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                        <img src="images/4.jpg" alt="" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
                         <div class="absolute inset-0 bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                             <span class="material-symbols-outlined text-primary text-4xl bg-clinical-white/90 p-3 rounded-full shadow">zoom_in</span>
                         </div>
@@ -126,7 +126,7 @@
 
                 <div class="gallery-card bg-clinical-white rounded-xl overflow-hidden shadow-sm border border-outline-variant/30 aspect-square" onclick="openLightbox(4)">
                     <div class="relative w-full h-full overflow-hidden group">
-                        <img src="5.jpg" alt="" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                        <img src="images/5.jpg" alt="" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
                         <div class="absolute inset-0 bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                             <span class="material-symbols-outlined text-primary text-4xl bg-clinical-white/90 p-3 rounded-full shadow">zoom_in</span>
                         </div>
@@ -135,7 +135,7 @@
 
                 <div class="gallery-card bg-clinical-white rounded-xl overflow-hidden shadow-sm border border-outline-variant/30 aspect-square" onclick="openLightbox(5)">
                     <div class="relative w-full h-full overflow-hidden group">
-                        <img src="6.jpg" alt="" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                        <img src="images/6.jpg" alt="" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
                         <div class="absolute inset-0 bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                             <span class="material-symbols-outlined text-primary text-4xl bg-clinical-white/90 p-3 rounded-full shadow">zoom_in</span>
                         </div>
@@ -198,15 +198,15 @@
         }
     });
 
-    // Skrypt obsługi podglądu dla plików 1.jpg - 6.jpg
+    // Skrypt obsługi podglądu dla plików images/1.jpg - images/6.jpg
     let currentImgIndex = 0;
     const galleryImages = [
-        "1.jpg",
-        "2.jpg",
-        "3.jpg",
-        "4.jpg",
-        "5.jpg",
-        "6.jpg"
+        "images/1.jpg",
+        "images/2.jpg",
+        "images/3.jpg",
+        "images/4.jpg",
+        "images/5.jpg",
+        "images/6.jpg"
     ];
 
     function openLightbox(index) {

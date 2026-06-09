@@ -1,119 +1,276 @@
 <!DOCTYPE html>
-<html class="scroll-smooth" lang="pl">
-<head>
-    <meta charset="utf-8"/>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-    <title>Beata Stróżna - Gabinet Masażu Leczniczego</title>
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-    <script id="tailwind-config">
+
+<html lang="pl"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Galeria - Beata Stróżna Gabinet Masażu Leczniczego</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
             theme: {
                 extend: {
-                    colors: {
-                        "primary-container": "#4db2b2", "on-primary-fixed": "#002020", "inverse-on-surface": "#f2f0f0",
-                        "surface-container": "#efeded", "on-secondary-fixed-variant": "#00429b", "on-background": "#1b1c1c",
-                        "tertiary-fixed": "#ffdbcc", "on-tertiary": "#ffffff", "error": "#ba1a1a",
-                        "primary-fixed-dim": "#74d6d6", "outline": "#6e7979", "background": "#fbf9f8",
-                        "surface-container-low": "#f5f3f3", "on-primary-fixed-variant": "#004f50",
-                        "on-secondary-fixed": "#001945", "error-container": "#ffdad6", "on-surface-variant": "#3e4949",
-                        "surface-container-high": "#eae8e7", "on-tertiary-fixed-variant": "#733512",
-                        "secondary-fixed": "#d9e2ff", "on-error": "#ffffff", "outline-variant": "#bdc9c8",
-                        "primary": "#006a6a", "surface-container-highest": "#e4e2e2", "surface-dim": "#dbdad9",
-                        "surface-container-lowest": "#ffffff", "on-error-container": "#93000a", "deep-slate": "#333333",
-                        "surface-bright": "#fbf9f8", "secondary-fixed-dim": "#b0c6ff", "secondary": "#225abc",
-                        "surface-mist": "#EBF9F9", "on-surface": "#1b1c1c", "tertiary": "#914c27",
-                        "on-tertiary-fixed": "#351000", "surface-variant": "#e4e2e2", "on-secondary-container": "#002f74",
-                        "on-primary": "#ffffff", "surface-tint": "#006a6a", "tertiary-fixed-dim": "#ffb693",
-                        "surface": "#fbf9f8", "inverse-surface": "#303030", "primary-fixed": "#91f3f2",
-                        "on-tertiary-container": "#622805", "inverse-primary": "#74d6d6", "secondary-container": "#6a98fe",
-                        "on-primary-container": "#004141", "on-secondary": "#ffffff", "clinical-white": "#FFFFFF",
-                        "tertiary-container": "#e38e64"
+                    "colors": {
+                        "primary-fixed": "#91f3f2",
+                        "surface-mist": "#EBF9F9",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-container": "#4db2b2",
+                        "outline-variant": "#bdc9c8",
+                        "on-background": "#1b1c1c",
+                        "on-secondary-container": "#002f74",
+                        "tertiary": "#914c27",
+                        "surface-container-highest": "#e4e2e2",
+                        "on-primary-fixed-variant": "#004f50",
+                        "on-tertiary-container": "#622805",
+                        "on-secondary": "#ffffff",
+                        "background": "#fbf9f8",
+                        "surface-container": "#efeded",
+                        "primary": "#006a6a",
+                        "on-primary": "#ffffff",
+                        "on-secondary-fixed-variant": "#00429b",
+                        "surface-container-high": "#eae8e7",
+                        "deep-slate": "#333333",
+                        "surface-container-low": "#f5f3f3",
+                        "surface-tint": "#006a6a",
+                        "surface": "#fbf9f8",
+                        "outline": "#6e7979",
+                        "tertiary-fixed": "#ffdbcc",
+                        "primary-fixed-dim": "#74d6d6",
+                        "on-secondary-fixed": "#001945",
+                        "inverse-surface": "#303030",
+                        "error": "#ba1a1a",
+                        "secondary-fixed-dim": "#b0c6ff",
+                        "error-container": "#ffdad6",
+                        "surface-variant": "#e4e2e2",
+                        "secondary-fixed": "#d9e2ff",
+                        "on-primary-container": "#004141",
+                        "on-primary-fixed": "#002020",
+                        "clinical-white": "#FFFFFF",
+                        "on-tertiary-fixed": "#351000",
+                        "tertiary-container": "#e38e64",
+                        "on-tertiary-fixed-variant": "#733512",
+                        "secondary-container": "#6a98fe",
+                        "inverse-on-surface": "#f2f0f0",
+                        "surface-dim": "#dbdad9",
+                        "surface-bright": "#fbf9f8",
+                        "on-error": "#ffffff",
+                        "on-surface-variant": "#3e4949",
+                        "on-error-container": "#93000a",
+                        "on-tertiary": "#ffffff",
+                        "tertiary-fixed-dim": "#ffb693",
+                        "inverse-primary": "#74d6d6",
+                        "secondary": "#225abc",
+                        "on-surface": "#1b1c1c"
                     },
-                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
-                    spacing: { "container-max": "1200px", "stack-lg": "48px", "gutter": "24px", "margin-desktop": "64px", "base": "8px", "stack-md": "24px", "margin-mobile": "20px", "stack-sm": "12px" },
-                    fontFamily: { "display-lg": ["Manrope"], "label-md": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Manrope"], "body-lg": ["Plus Jakarta Sans"], "headline-md": ["Manrope"], "caption": ["Plus Jakarta Sans"], "headline-lg": ["Manrope"], "body-md": ["Plus Jakarta Sans"] },
-                    fontSize: { "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}], "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600"}], "headline-lg-mobile": ["24px", {"lineHeight": "32px", "fontWeight": "600"}], "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}], "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "500"}], "caption": ["12px", {"lineHeight": "16px", "fontWeight": "400"}], "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "600"}], "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}] }
-                }
-            }
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-mobile": "20px",
+                        "base": "8px",
+                        "stack-sm": "12px",
+                        "stack-lg": "48px",
+                        "gutter": "24px",
+                        "stack-md": "24px",
+                        "margin-desktop": "64px",
+                        "container-max": "1200px"
+                    },
+                    "fontFamily": {
+                        "display-lg": ["Manrope"],
+                        "headline-md": ["Manrope"],
+                        "body-md": ["Plus Jakarta Sans"],
+                        "body-lg": ["Plus Jakarta Sans"],
+                        "caption": ["Plus Jakarta Sans"],
+                        "label-md": ["Plus Jakarta Sans"],
+                        "headline-lg-mobile": ["Manrope"],
+                        "headline-lg": ["Manrope"]
+                    },
+                    "fontSize": {
+                        "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "500"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "caption": ["12px", {"lineHeight": "16px", "fontWeight": "400"}],
+                        "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600"}],
+                        "headline-lg-mobile": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                        "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "600"}]
+                    }
+                },
+            },
         }
     </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .gallery-card {
+            transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.4s ease;
+            cursor: pointer;
+        }
+        .gallery-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0px 12px 40px rgba(0, 0, 0, 0.12);
+        }
+        #lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.95);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        #lightbox img {
+            max-width: 90%;
+            max-height: 90%;
+            border-radius: 4px;
+            box-shadow: 0 0 50px rgba(0,0,0,0.8);
+            object-fit: contain;
+        }
+        .aspect-square {
+            aspect-ratio: 1 / 1;
+        }
+    </style>
 </head>
-<body class="bg-surface font-body-md text-on-surface">
-
-<header class="fixed top-0 w-full z-50 bg-clinical-white/90 backdrop-blur-md shadow-sm">
-    <nav class="flex justify-between items-center h-20 px-3 sm:px-4 md:px-margin-desktop max-w-container-max mx-auto gap-2">
-        <div class="flex items-center min-w-0 shrink-1">
-    <a class="block py-2" href="index.html">
-        <img 
-            src="images/logo.png" 
-            alt="Beata Stróżna - Gabinet Masażu Leczniczego" 
-            class="h-8 sm:h-9 md:h-10 w-auto object-contain transition-opacity hover:opacity-80"
-        >
-    </a>
+<body class="bg-background text-on-background font-body-md selection:bg-primary-container selection:text-on-primary-container flex flex-col min-h-screen">
+<header class="fixed top-0 w-full z-50 bg-clinical-white/90 dark:bg-inverse-surface/90 backdrop-blur-md shadow-sm">
+<nav class="flex justify-between items-center h-20 px-4 md:px-margin-desktop max-w-container-max mx-auto">
+<div class="flex items-center gap-3">
+<a class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed leading-tight">
+                    Beata Stróżna
+                </a>
 </div>
-        <ul class="hidden md:flex gap-8 items-center">
-            <li><a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="index.html">Strona główna</a></li>
-            <li><a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="o-mnie.html">O mnie</a></li>
-            <li><a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="oferta.html">Oferta</a></li>
-            <li><a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="galeria.html">Galeria</a></li>
-            <li><a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="kontakt.html">Kontakt</a></li>
-        </ul>
-        <div class="flex items-center gap-1.5 sm:gap-4 shrink-0">
-            <a class="bg-primary text-on-primary text-xs sm:text-label-md h-9 sm:h-11 px-3 sm:px-6 rounded-full font-semibold hover:opacity-90 transition-all shadow-md inline-flex items-center justify-center whitespace-nowrap" href="tel:+48782638597">
+<ul class="hidden md:flex gap-8 items-center">
+<li><a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="index.html">Strona główna</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="o-mnie.html">O mnie</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="oferta.html">Oferta</a></li>
+<li><a class="text-primary dark:text-primary-fixed font-semibold border-b-2 border-primary transition-colors font-label-md text-label-md" href="galeria.html">Galeria</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="kontakt.html">Kontakt</a></li>
+</ul>
+<a class="bg-primary text-on-primary px-6 py-2.5 rounded-full font-label-md text-label-md hover:opacity-90 transition-all shadow-md inline-flex items-center justify-center" href="tel:+48782638597">
                 Umów wizytę
             </a>
-            <button id="menuBtn" class="block md:hidden text-primary p-2 focus:outline-none rounded-full transition-colors hover:bg-primary/5 relative w-11 h-11" aria-label="Menu">
-                <div class="absolute inset-0 flex items-center justify-center">
-                    <svg class="w-6 h-6 transform transition-all duration-300 scale-100 rotate-0 opacity-100" id="iconMenu" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path></svg>
-                    <svg class="w-6 h-6 transform transition-all duration-300 scale-50 -rotate-90 opacity-0 absolute" id="iconClose" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path></svg>
-                </div>
-            </button>
-        </div>
-    </nav>
-    <div id="mobileMenu" class="hidden fixed top-20 left-0 w-full bg-clinical-white shadow-lg border-t border-outline-variant/20 py-6 px-4 md:hidden z-40">
-        <ul class="flex flex-col gap-5 text-center">
-            <li><a class="block text-on-surface-variant hover:text-primary py-2 font-label-md text-lg" href="index.html">Strona główna</a></li>
-            <li><a class="block text-on-surface-variant hover:text-primary py-2 font-label-md text-lg" href="o-mnie.html">O mnie</a></li>
-            <li><a class="block text-on-surface-variant hover:text-primary py-2 font-label-md text-lg" href="oferta.html">Oferta</a></li>
-            <li><a class="block text-on-surface-variant hover:text-primary py-2 font-label-md text-lg" href="galeria.html">Galeria</a></li>
-            <li><a class="block text-on-surface-variant hover:text-primary py-2 font-label-md text-lg" href="kontakt.html">Kontakt</a></li>
-        </ul>
-    </div>
+</nav>
 </header>
-
-<main class="pt-20 min-h-[calc(100vh-80px-56px)] flex items-center">
-    <div class="container max-w-4xl mx-auto px-4 md:px-margin-desktop py-stack-lg legal-content">
-        <h1 class="font-display-lg text-display-lg text-on-background mb-stack-md leading-tight">Polityka Prywatności</h1>
-        <p class="font-body-lg text-body-lg text-on-surface-variant mb-stack-lg">Twoja prywatność jest dla nas kluczowa. Poniżej znajdziesz szczegółowe informacje dotyczące przetwarzania danych osobowych oraz wykorzystywania plików cookies w naszym serwisie.</p>
-    </div>
+<main class="pt-32 pb-stack-lg max-w-container-max mx-auto px-4 md:px-margin-desktop flex-grow">
+<header class="mb-stack-lg text-center md:text-left">
+<span class="text-primary font-label-md tracking-wider mb-2 block uppercase">Moje Wnętrza</span>
+<h1 class="font-display-lg text-display-lg md:text-display-lg text-on-surface mb-4">Galeria Gabinetu</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+                Zapraszam do zapoznania się z przestrzenią, w której profesjonalizm łączy się z kojącą atmosferą. Każdy detal został zaprojektowany z myślą o Państwa komforcie i regeneracji.
+            </p>
+</header>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="image-gallery">
+<div class="group relative overflow-hidden rounded-lg gallery-card bg-surface-container-low aspect-square">
+<img alt="Wejście do gabinetu - widok z bliska" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkI8ZKij4DmyhivZp1i3VAaSuiNTFcgm2PxplxbmM067oFs1_XwvK6R8FLBWqFeSOrkucZc7ouYDO_xvr3A2KM5nYcOsbUNLVzPPbA58ZbbJeklK-eE1dUG9iefMPt-spoFOkTWpMpZ1Egzr6OThBKWEAXnfBoDJ2QDDRUVsBEIv2MirEuNnxlm1Qe-zpEOHF8rKcPbTxBq8V2mZ9yWyZmUK9MzFd52RrZ_rDnkIdgZy0F3-BXyrpwgyV_T_7naz9Z1DPQLStrk4c0"/>
+<div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+</div>
+<div class="group relative overflow-hidden rounded-lg gallery-card bg-surface-container-low aspect-square">
+<img alt="Akcesoria do masażu i świece zapachowe" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGioPXGuldskHYWLgyr11T_dUMeENvibVPDR9fEIT8csjPB4jESfS25-kbpyg5L-w3GOgfV-FfAzHH1-spPrlnBrFQsjG-NGohwz1AQxDZmjq7-6YWNk8_3zdnK8hNwKAxJuiFe9b5UH0XBSt6Ysuud9hlwQUYGuG6zdEh2WocO8cdvCHHd7eVkxpVN1EPC_N7_OX0brDL6GD5Oll0SoOaHABzGlW6DBPiw6weQA18gHPNWa9yvQtgfY8zgKLpFGeWE6zcbK5FrSnl"/>
+<div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+</div>
+<div class="group relative overflow-hidden rounded-lg gallery-card bg-surface-container-low aspect-square">
+<img alt="Profesjonalny sprzęt do masażu leczniczego" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAz9MyUiM7c4hXyEBrAa6v-P81VSVfaxbLJitPzSM9ybkOucqq-7MklsqHgtOrI0BQMaWNWUXdv5rDJhmGk5_TDiPL9Y9Qu3-u7JuX__0VgT1id3M6K50kwFKuQsxv4GO30g8CEdSSNSFCpxVxi5XAmSDOTZ7T7Cmu0urgYQhO6j71Fx3ZvGjNlvSpBOpWj5TgKXbdsEE5Up_-iGtlYtlqEYUZHF1XxKdhzr-DZiOVHNafmEnbIxqxtHjMDPoZEC2AgYPni1zSnW1Dl"/>
+<div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+</div>
+<div class="group relative overflow-hidden rounded-lg gallery-card bg-surface-container-low aspect-square">
+<img alt="Szyld informacyjny gabinetu Beata Stróżna" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJ4Reacku_YWkAjgB_n8kL45g_Uez0MHHodhRKt6dLC9Bi1Bg0ugbfF3iyyo-gcKvZUozo2Cnb0wFzX1RrbNJDUCgmr4RuKz9ocXJP5LwO__OQznlJ6s1yVgzDtj8mtnJGhmM7otw6_7WS6kdzvAKJshDd56SohiRF04UiXo15tiQks4AVaYwkA2qe3FgfmkFwfHd--OWlvUdWN1KSzLCbV_r9mbaKodkdA5HyoYGB7La78UTT1RZHlTnTiD2xMsYSki7zNdsmz4CE"/>
+<div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+</div>
+<div class="group relative overflow-hidden rounded-lg gallery-card bg-surface-container-low aspect-square">
+<img alt="Widok na budynek gabinetu z ulicy" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQReMUMxsS_Aair7-oeEqmTrQ07_pM-sPJ34juICwQj4alBWbnqf0UVq3x29vIAyTw3GjglmZQKIpTljjLBlC6OAW0OdlDDTFvOd73t3OQdPXgNAfTBvZlzsGzfic109k7bnQtd9MGzQR9xYf8MkX_Motkjqmd1jpozCLtEirq_bfn6JSNsnW1STrXM7tI03FO6c4IAKVNH1PN6vAKfdAuyMZkYed3A5AZhhx3K_ZILh0ArqSp8kazeH3jhVr-xfaJJT0Axn_qhNKC"/>
+<div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+</div>
+<div class="group relative overflow-hidden rounded-lg gallery-card bg-surface-container-low aspect-square">
+<img alt="Brama wejściowa i tablica informacyjna" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-DTM50T3_14_oZ4dPKQh82p4RDyh03hQePQd1cJ1DCM-gr7zBrWGUdQIvRE6NyiBr2sg_TGe8jGh7vy6A70Z6B9cR0rdBzm9DleRSHidqUjLBD0XO5TN0WuTkp4M4MnRbWAO279N7hGxOH_sDIbL5CDUgHCANmsmUCrQLY55NhtNThB9-9r2gOStbiqgSgplfa6h4iyS2t4Buw_O8QuxQG5NtVIm1s6-qGriAbw8JO_6AMIap_sIPErl9spM44ip73sog8-aX7pOx"/>
+<div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+</div>
+</div>
+<section class="mt-stack-lg bg-surface-mist rounded-lg p-8 md:p-12 flex flex-col md:flex-row items-center justify-between gap-8">
+<div class="max-w-xl">
+<h2 class="font-headline-lg text-headline-lg text-on-primary-container mb-4">Poczuj ulgę już dzisiaj</h2>
+<p class="font-body-md text-on-surface-variant mb-6">Moja oferta obejmuje szeroki zakres masaży leczniczych i relaksacyjnych dostosowanych do Twoich indywidualnych potrzeb.</p>
+<div class="flex flex-col gap-2">
+<p class="font-label-md text-primary flex items-center gap-2">
+<span class="material-symbols-outlined text-xl">phone</span> +48 782 638 597
+                    </p>
+<p class="font-label-md text-primary flex items-center gap-2">
+<span class="material-symbols-outlined text-xl">mail</span> biuro@masazleczniczybeata.pl
+                    </p>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row gap-4 w-full md:w-auto">
+<a class="flex-1 md:flex-none text-center border-2 border-primary text-primary px-8 py-3 rounded-lg font-label-md hover:bg-primary hover:text-on-primary transition-all" href="oferta.html">Zobacz ofertę</a>
+<a class="flex-1 md:flex-none text-center bg-primary text-on-primary px-8 py-3 rounded-lg font-label-md hover:shadow-lg transition-all" href="tel:+48782638597">Umów się</a>
+</div>
+</section>
 </main>
-
+<footer class="bg-surface-container w-full py-stack-lg border-t border-outline-variant/30">
+<div class="flex flex-col md:flex-row justify-between items-center px-4 md:px-margin-desktop max-w-container-max mx-auto gap-stack-md">
+<div class="text-on-surface-variant font-body-md text-body-md text-center md:text-left">
+                © 2026 Gabinet Masażu Leczniczego Beata Stróżna
+            </div>
+<div class="flex items-center gap-1 text-on-surface-variant font-label-md text-label-md">
+				<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="polityka-prywatnosci.html">Polityka prywatności i cookies</a>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant font-label-md text-label-md">
+                Projekt i realizacja: 
+                <a class="text-primary hover:underline transition-colors flex items-center gap-1" href="https://halaczkiewicz.it" target="_blank">
+                    halaczkiewicz.it
+                </a>
+</div>
+</div>
+</div>
+</footer>
+<div id="lightbox">
+<span class="material-symbols-outlined absolute top-8 right-8 text-clinical-white text-4xl cursor-pointer hover:scale-110 transition-transform bg-black/20 rounded-full p-2" id="close-lightbox">close</span>
+<img alt="Powiększone zdjęcie" id="lightbox-img" src=""/>
+</div>
 <script>
-    const menuBtn = document.getElementById('menuBtn');
-    const mobileMenu = document.getElementById('mobileMenu');
-    const iconMenu = document.getElementById('iconMenu');
-    const iconClose = document.getElementById('iconClose');
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        const closeLightbox = document.getElementById('close-lightbox');
 
-    menuBtn.addEventListener('click', () => {
-        const isHidden = mobileMenu.classList.toggle('hidden');
-        if (isHidden) {
-            iconMenu.classList.replace('scale-50', 'scale-100');
-            iconMenu.classList.replace('rotate-90', 'rotate-0');
-            iconMenu.classList.replace('opacity-0', 'opacity-100');
-            iconClose.classList.replace('scale-100', 'scale-50');
-            iconClose.classList.replace('rotate-0', '-rotate-90');
-            iconClose.classList.replace('opacity-100', 'opacity-0');
-        } else {
-            iconMenu.classList.replace('scale-100', 'scale-50');
-            iconMenu.classList.replace('rotate-0', 'rotate-90');
-            iconMenu.classList.replace('opacity-100', 'opacity-0');
-            iconClose.classList.replace('scale-50', 'scale-100');
-            iconClose.classList.replace('-rotate-90', 'rotate-0');
-            iconClose.classList.replace('opacity-0', 'opacity-100');
-        }
-    });
-</script>
-</body>
-</html>
+        document.querySelectorAll('.gallery-card').forEach(card => {
+            card.addEventListener('click', () => {
+                const img = card.querySelector('img');
+                const imgSrc = img.src;
+                const imgAlt = img.alt;
+                lightboxImg.src = imgSrc;
+                lightboxImg.alt = imgAlt;
+                lightbox.style.display = 'flex';
+                document.body.style.overflow = 'hidden';
+            });
+        });
+
+        lightbox.addEventListener('click', (e) => {
+            if (e.target !== lightboxImg) {
+                lightbox.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+        });
+
+        closeLightbox.addEventListener('click', () => {
+            lightbox.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && lightbox.style.display === 'flex') {
+                lightbox.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+        });
+    </script>
+</body></html>

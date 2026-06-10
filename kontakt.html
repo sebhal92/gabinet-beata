@@ -278,37 +278,14 @@
     });
 </script>
 <script>
+    // Używamy tylko jednego, poprawnego adresu URL
     const scriptURL = 'https://script.google.com/macros/s/AKfycbzv-ji2vB9YOoq3tdcxTSCxYqcWPmj11xvp9a5Zf8RQ1pg7oYfZ3mF6DYwbGXxo5L9J/exec';
-    const form = document.getElementById('contactForm');
-    const btn = document.getElementById('submitBtn');
-
-    form.addEventListener('submit', e => {
-        e.preventDefault();
-        btn.disabled = true;
-        btn.innerText = "Wysyłanie...";
-
-        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-            .then(response => {
-                alert('Dziękuję za wiadomość! Odpowiem najszybciej jak to możliwe.');
-                form.reset();
-            })
-            .catch(error => {
-                alert('Wystąpił błąd. Spróbuj ponownie później.');
-            })
-            .finally(() => {
-                btn.disabled = false;
-                btn.innerText = "Wyślij zapytanie";
-            });
-    });
-</script>
-<script>
-    const scriptURL = 'TUTAJ_WKLEJ_SWÓJ_URL_Z_GOOGLE_APPS_SCRIPT';
     const form = document.getElementById('contactForm');
     const btn = document.getElementById('submitBtn');
     const checkbox = document.getElementById('consent');
     const consentError = document.getElementById('consentError');
 
-    // Funkcja blokująca/odblokowująca przycisk
+    // Funkcja zarządzająca stanem przycisku
     function toggleButton() {
         if (checkbox.checked) {
             btn.disabled = false;
@@ -319,16 +296,18 @@
         }
     }
 
-    // Ustawienie początkowego stanu przycisku
-    toggleButton();
+    // Ustawienie początkowego stanu (przycisk wyłączony przy ładowaniu strony)
+    btn.disabled = true;
+    checkbox.checked = false;
 
     // Nasłuchiwanie zmian na checkboxie
     checkbox.addEventListener('change', toggleButton);
 
-    // Obsługa wysyłki formularza
+    // Obsługa wysyłki
     form.addEventListener('submit', e => {
         e.preventDefault();
         
+        // Dodatkowa walidacja przed wysłaniem
         if (!checkbox.checked) {
             consentError.classList.remove('hidden');
             return;
@@ -341,13 +320,14 @@
             .then(response => {
                 alert('Dziękuję za wiadomość! Odpowiem najszybciej jak to możliwe.');
                 form.reset();
-                toggleButton(); // Reset stanu przycisku
+                toggleButton(); // Zresetuj przycisk po wysłaniu
             })
             .catch(error => {
                 alert('Wystąpił błąd. Spróbuj ponownie później.');
             })
             .finally(() => {
-                btn.disabled = false;
+                // Przywrócenie stanu przycisku
+                toggleButton();
                 btn.innerText = "Wyślij zapytanie";
             });
     });

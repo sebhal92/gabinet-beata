@@ -28,6 +28,7 @@ exclude:
 # Include assets folder
 include:
   - assets
+  - images
 
 # Future-proof settings
 kramdown:

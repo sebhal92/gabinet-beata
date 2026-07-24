@@ -25,6 +25,23 @@ exclude:
   - robots.txt
   - security.txt
 
+# Include assets folder
+include:
+  - assets
+
 # Future-proof settings
 kramdown:
   input: GFM
+
+# Performance optimizations
+plugins:
+  - jekyll-minifier
+  - jekyll-sitemap
+
+jekyll-minifier:
+  remove_comments: true
+  remove_intertag_spaces: true
+  collapse_whitespace: true
+  remove_quotes: true
+  compress_css: true
+  compress_javascript: true

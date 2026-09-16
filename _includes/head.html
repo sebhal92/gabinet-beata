@@ -1,0 +1,115 @@
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="index, follow">
+
+    <!-- SEO Meta Tags -->
+    <title>{% if page.title %}{{ page.title }} - {% endif %}Beata Stróżna - Gabinet Masażu Leczniczego</title>
+    <meta name="description" content="Profesjonalny masaż leczniczy, rehabilitacja i fizjoterapia w Jelczu-Laskowicach. Doświadczony masażysta, ul. Makowa 14. Umów wizytę telefonicznie!">
+    <meta name="keywords" content="masaż leczniczy Jelcz-Laskowice, masażysta Jelcz, fizjoterapia, rehabilitacja, masaż kręgosłupa, Beata Stróżna">
+
+    <link rel="canonical" href="{{ site.url }}{% if page.url %}{{ page.url }}{% endif %}" />
+
+    <!-- OpenGraph for Social Media & Sharing -->
+    <meta property="og:title" content="{% if page.title %}{{ page.title }} - {% endif %}Gabinet Masażu Leczniczego Beata Stróżna">
+    <meta property="og:description" content="Profesjonalny masaż leczniczy i rehabilitacja w Jelczu-Laskowicach. Ul. Makowa 14.">
+    <meta property="og:site_name" content="Gabinet Masażu Leczniczego Beata Stróżna">
+    <meta property="og:url" content="{{ site.url }}{% if page.url %}{{ page.url }}{% endif %}">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="{{ site.url }}/assets/images/og-image.webp">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/assets/images/favicon.png">
+    <link rel="apple-touch-icon" href="/assets/images/favicon.png">
+
+    <!-- Tailwind CSS & Google Fonts -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary-container": "#36b2b2", "on-primary-fixed": "#002020", "inverse-on-surface": "#f2f0f0",
+                        "surface-container": "#efeded", "on-secondary-fixed-variant": "#00429b", "on-background": "#1b1c1c",
+                        "tertiary-fixed": "#ffdbcc", "on-tertiary": "#ffffff", "error": "#ba1a1a",
+                        "primary-fixed-dim": "#74d6d6", "outline": "#6e7979", "background": "#fbf9f8",
+                        "surface-container-low": "#f5f3f3", "on-primary-fixed-variant": "#004f50",
+                        "on-secondary-fixed": "#001945", "error-container": "#ffdad6", "on-surface-variant": "#3e4949",
+                        "surface-container-high": "#eae8e7", "on-tertiary-fixed-variant": "#733512",
+                        "secondary-fixed": "#d9e2ff", "on-error": "#ffffff", "outline-variant": "#bdc9c8",
+                        "primary": "#36b2b2", "surface-container-highest": "#e4e2e2", "surface-dim": "#dbdad9",
+                        "surface-container-lowest": "#ffffff", "on-error-container": "#93000a", "deep-slate": "#333333",
+                        "surface-bright": "#fbf9f8", "secondary-fixed-dim": "#b0c6ff", "secondary": "#225abc",
+                        "surface-mist": "#EBF9F9", "on-surface": "#1b1c1c", "tertiary": "#914c27",
+                        "on-tertiary-fixed": "#351000", "surface-variant": "#e4e2e2", "on-secondary-container": "#002f74",
+                        "on-primary": "#ffffff", "surface-tint": "#36b2b2", "tertiary-fixed-dim": "#ffb693",
+                        "surface": "#fbf9f8", "inverse-surface": "#303030", "primary-fixed": "#91f3f2",
+                        "on-tertiary-container": "#622805", "inverse-primary": "#74d6d6", "secondary-container": "#6a98fe",
+                        "on-primary-container": "#004141", "on-secondary": "#ffffff", "clinical-white": "#FFFFFF",
+                        "tertiary-container": "#e38e64", "mint-bg": "#eefeff"
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                    spacing: { "container-max": "1200px", "stack-lg": "48px", "gutter": "24px", "margin-desktop": "64px", "base": "8px", "stack-md": "24px", "margin-mobile": "20px", "stack-sm": "12px" },
+                    fontFamily: { "display-lg": ["Manrope"], "label-md": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Manrope"], "body-lg": ["Plus Jakarta Sans"], "headline-md": ["Manrope"], "caption": ["Plus Jakarta Sans"], "headline-lg": ["Manrope"], "body-md": ["Plus Jakarta Sans"] },
+                    fontSize: { "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}], "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600"}], "headline-lg-mobile": ["24px", {"lineHeight": "32px", "fontWeight": "600"}], "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}], "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "500"}], "caption": ["12px", {"lineHeight": "16px", "fontWeight": "400"}], "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "600"}], "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}] }
+                }
+            }
+        }
+    </script>
+
+    <!-- Schema.org LocalBusiness (JSON-LD) z dokładnymi godzinami -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HealthAndBeautyBusiness",
+      "name": "Gabinet Masażu Leczniczego Beata Stróżna",
+      "alternateName": [
+        "Beata Stróżna",
+        "Beata Strozna",
+        "Gabinet Masażu Leczniczego"
+      ],
+      "description": "Profesjonalny masaż leczniczy, rehabilitacja i fizjoterapia w Jelczu-Laskowicach.",
+      "url": "{{ site.url }}",
+      "image": "{{ site.url }}/assets/images/og-image.webp",
+      "telephone": "+48782638597",
+      "email": "biuro@masazleczniczybeata.pl",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "ul. Makowa 14",
+        "addressLocality": "Jelcz-Laskowice",
+        "postalCode": "55-220",
+        "addressCountry": "PL"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 51.03710,
+        "longitude": 17.33710
+      },
+      "priceRange": "$$",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Wednesday"],
+          "opens": "11:00",
+          "closes": "19:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Tuesday", "Thursday", "Friday"],
+          "opens": "09:00",
+          "closes": "17:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Saturday"],
+          "opens": "08:00",
+          "closes": "12:00"
+        }
+      ]
+    }
+    </script>
+</head>

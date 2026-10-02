@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: sebhal92/gabinet-beata
+  repo: sebhal92/gabinet-beata-test
   branch: main
 
 media_folder: "assets/images"
@@ -9,29 +9,60 @@ public_folder: "/assets/images"
 collections:
   - name: "cennik"
     label: "Cennik usług"
-    folder: "_data"
-    create: false
-    delete: false
-    extension: "yml"
-    format: "yaml"
-    fields:
-      - label: "Kategorie"
-        name: "kategorie"
-        widget: "list"
+    files:
+      - name: "cennik"
+        label: "Cennik usług"
+        file: "_data/cennik.yml"
         fields:
-          - label: "Nazwa kategorii"
-            name: "nazwa"
-            widget: "string"
-          - label: "Pozycje"
-            name: "pozycje"
+          - label: "Kategorie"
+            name: "kategorie"
             widget: "list"
             fields:
-              - label: "Zabieg"
-                name: "zabieg"
+              - label: "Nazwa kategorii"
+                name: "nazwa"
                 widget: "string"
-              - label: "Czas"
-                name: "czas"
-                widget: "string"
-              - label: "Cena"
-                name: "cena"
-                widget: "string"
+              - label: "Pozycje"
+                name: "pozycje"
+                widget: "list"
+                fields:
+                  - label: "Zabieg"
+                    name: "zabieg"
+                    widget: "string"
+                  - label: "Czas"
+                    name: "czas"
+                    widget: "string"
+                  - label: "Cena"
+                    name: "cena"
+                    widget: "string"
+
+  - name: "godziny"
+    label: "Godziny otwarcia"
+    files:
+      - name: "godziny"
+        label: "Godziny otwarcia"
+        file: "_data/godziny.yml"
+        fields:
+          - label: "Poniedziałek"
+            name: "poniedzialek"
+            widget: "string"
+          - label: "Wtorek"
+            name: "wtorek"
+            widget: "string"
+          - label: "Środa"
+            name: "sroda"
+            widget: "string"
+          - label: "Czwartek"
+            name: "czwartek"
+            widget: "string"
+          - label: "Piątek"
+            name: "piatek"
+            widget: "string"
+          - label: "Sobota"
+            name: "sobota"
+            widget: "string"
+          - label: "Niedziela"
+            name: "niedziela"
+            widget: "string"
+          - label: "Przypis / Informacja"
+            name: "przypis"
+            widget: "text"

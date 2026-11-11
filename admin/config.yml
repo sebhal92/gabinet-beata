@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: sebhal92/gabinet-beata-test
+  repo: sebhal92/gabinet-beata
   branch: main
 
 media_folder: "assets/images"
